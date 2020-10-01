@@ -1,0 +1,52 @@
+#nametag-container {
+    width: 753px;
+    height: 468px;
+    background: #F2DAFB;
+    margin: 50px auto 0;
+    border: 30px #1A5974 solid;
+    transition: all .5s ease-in-out;
+
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+#nametag-container {
+    border-right:120px solid #1A5974
+}
+h1{
+    font-family: Impact;
+    font-size: 90px;
+    line-height: 2px;
+    color: #1A5974;
+}
+h2,h3,h4
+{
+    font-family: Impact;
+    font-size: 90px;
+    line-height: 2px;
+    color: #1A5974;
+    opacity: 0.5;  
+}
+.circle span{
+    width: 58px;
+    height: 58px;
+    display: inline-block;
+    border-radius: 100%;
+    transition: all .5s ease-in;
+}
+.circle span{
+    background-color: #F2DAFB;
+    transition-delay: .25s;
+    position:absolute;; right:98px; top:82px}
+
+    #nametag-container:hover {
+        background-color: #ffeede;
+        border-color: #ece579d5;
+        transition: all .5s ease-in;
+    }
+    
+    #nametag-container:hover .circle span {
+        opacity: .5;
+        transform: translateY(344px);
+    }
