@@ -19,6 +19,17 @@ h1{
     font-size: 90px;
     line-height: 2px;
     color: #1A5974;
+    margin-block-start: 43px;
+    margin-block-end: auto;
+    transition: all .5s ease-in;
+}
+.line{
+    width: 580px;
+    margin-top:42px;
+    transition: all .5s ease-in;
+    border-bottom: 4px solid #1A5974;
+    position:absolute; right:483px; top:130px
+    
 }
 h2,h3,h4
 {
@@ -26,7 +37,29 @@ h2,h3,h4
     font-size: 90px;
     line-height: 2px;
     color: #1A5974;
-    opacity: 0.5;  
+    opacity: 0.5; 
+    transition: all .5s ease-in;
+}
+h2{
+    margin-block-start: 108px;
+    margin-block-end: 40px;  
+}
+h3{
+    margin-block-start: 106px;
+    margin-block-end: 40px;
+}
+h4{
+    margin-block-start: 101px;
+    margin-block-end: 40px;
+    
+}
+h5{
+    font-family: Impact;
+    color: #1A5974;
+    opacity: 0.7;  
+    font-size: 42px;
+    transition: all .5s ease-in;
+    position:absolute; right:473px; top:363px
 }
 .circle span{
     width: 58px;
@@ -38,11 +71,11 @@ h2,h3,h4
 .circle span{
     background-color: #F2DAFB;
     transition-delay: .25s;
-    position:absolute;; right:98px; top:82px}
+    position:absolute;; right:376px; top:82px}
 
     #nametag-container:hover {
         background-color: #ffeede;
-        border-color: #ece579d5;
+        border-color: #8a8546d5;
         transition: all .5s ease-in;
     }
     
@@ -50,3 +83,22 @@ h2,h3,h4
         opacity: .5;
         transform: translateY(344px);
     }
+    #nametag-container:hover h1 {
+        color: #7c2929;
+    }
+    #nametag-container:hover h2{
+        color: #7c2929;  
+    }
+    #nametag-container:hover h3{
+        color: #7c2929;  
+    }
+    #nametag-container:hover h4{
+        color: #7c2929;  }
+    
+        #nametag-container:hover h5{
+            color: #7c2929;  }
+    
+    #nametag-container:hover .line{
+        border-bottom: 4px solid #7c2929;
+    }
+    
