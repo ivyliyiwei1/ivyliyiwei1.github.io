@@ -1,0 +1,89 @@
+body{
+    background-color: whitesmoke;
+}
+#verse-1 p {
+        text-align: center;
+        height: 4vh;
+        margin: -2px;
+        cursor: pointer;
+        transition: step-start;
+}
+ #verse-2 p {
+            text-align: center;
+            height: 4vh;
+            margin: -2px;
+            cursor: pointer;
+            transition: step-start;
+}
+#verse-3 p {
+    text-align: center;
+    height: 4vh;
+    margin: -2px;
+    cursor: pointer;
+    transition: step-start;
+}
+
+h1{
+    display: block;
+    font-size: 3vw;
+    margin-block-start: 0.60em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bolder;
+    text-align: center;
+    transition: all 1.5s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0.1em;   
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 1.5s ease-in-out;
+}
+#verse-1 {
+    margin-block-start: 0.2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 2px;
+    color: whitesmoke;
+    transition: all .5s ease-in;
+}
+#verse-2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 2px;
+    color: whitesmoke;
+    transition: all .5s ease-in;
+ 
+}
+#verse-3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 2px;
+    color: whitesmoke;
+    transition: all .5s ease-in;
+ 
+}
+#verse-1:hover {
+    transition: all .5s ease-in;
+   color:black
+   
+}
+#verse-2:hover {
+    transition: all .5s ease-in;
+   color:black
+   
+}
+#verse-3:hover {
+    transition: all .5s ease-in;
+   color:black
+   
+}
