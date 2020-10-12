@@ -1,5 +1,5 @@
 body{
-    background-color: whitesmoke;
+    background-color:  rgb(236, 231, 231);
 }
 #verse-1 p {
         text-align: center;
@@ -16,6 +16,20 @@ body{
             transition: step-start;
 }
 #verse-3 p {
+    text-align: center;
+    height: 4vh;
+    margin: -2px;
+    cursor: pointer;
+    transition: step-start;
+}
+#verse-4 p {
+    text-align: center;
+    height: 4vh;
+    margin: -2px;
+    cursor: pointer;
+    transition: step-start;
+}
+#verse-5 p {
     text-align: center;
     height: 4vh;
     margin: -2px;
@@ -47,20 +61,21 @@ h3{
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: all 1.5s ease-in-out;
+    color: rgb(43, 42, 42)
 }
 #verse-1 {
     margin-block-start: 0.2em;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     line-height: 2px;
-    color: whitesmoke;
+    color:  rgb(236, 231, 231);
     transition: all .5s ease-in;
 }
 #verse-2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     line-height: 2px;
-    color: whitesmoke;
+    color: rgb(236, 231, 231);
     transition: all .5s ease-in;
  
 }
@@ -68,22 +83,52 @@ h3{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     line-height: 2px;
-    color: whitesmoke;
+    color:  rgb(236, 231, 231);
+    transition: all .5s ease-in;
+ 
+}
+#verse-4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 2px;
+    color:  rgb(236, 231, 231);
+    transition: all .5s ease-in;
+ 
+}
+#verse-5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 2px;
+    color:  rgb(236, 231, 231);
     transition: all .5s ease-in;
  
 }
 #verse-1:hover {
     transition: all .5s ease-in;
-   color:black
+   color:rgb(58, 58, 58)
    
 }
 #verse-2:hover {
     transition: all .5s ease-in;
-   color:black
+   color:rgb(58, 58, 58)
    
 }
 #verse-3:hover {
     transition: all .5s ease-in;
-   color:black
+   color:rgb(58, 58, 58)
    
+}
+#verse-4:hover {
+    transition: all .5s ease-in;
+   color:rgb(58, 58, 58)
+   
+}
+#verse-5:hover {
+    transition: all .5s ease-in;
+   color:rgb(58, 58, 58)
+   
+}
+#img{
+    text-align: center;
+    transition: all .5s ease-in;
 }
