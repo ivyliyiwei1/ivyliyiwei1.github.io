@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color:#D6D4D4;
+}
+
+nav {
+    width: 100%;
+    height: 65px;
+    background: #D6D4D4;
+    padding: 14px 14px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}   
+#logo {
+    height: 100%;
+    width: 183px;
+    background: #C9A8A8;
+    margin: 0;
+}
+#search-bar {
+    width: 809px;
+    height: 100%;
+    background: #C9A8A8;
+}
+#shop {
+    width: 49px;
+    height: 100%;
+    background: #C9A8A8;
+}
+
+#sign-in {
+    width: 140px;
+    height: 100%;
+    background: #C9A8A8;
+}
+#sign-up {
+    width: 140px;
+    height: 100%;
+    background: #C9A8A8;
+}
+main {
+    display: flex;
+    
+}
+#nav1{
+    width:100%;
+    background: #C1C1C1;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav1 ul {
+    list-style: none;
+    margin: 0;
+    height: 100%;
+}
+#nav1 li {
+    width: 107px;
+    height:38px;
+    background: #A8ADC9;
+    box-sizing: border-box;
+  
+}
+#nav1 ul {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 14px 14px;
+}
+#video{
+    width:609px;
+    height:321px;
+    background: #C5BDB1;
+}
+header{
+    width: 1222px;
+    height:90px;
+    background:#C5BDB1;
+}
+#subline{
+    width: 609px;
+    height:26px;
+    background:#C5BDB1;
+}
+.bar ul{
+   list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.bar li {
+    height: 50px;
+    width: 107px;
+    background:#D2CAAE;
+}
