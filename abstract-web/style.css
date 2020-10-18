@@ -6,11 +6,13 @@ body {
 nav {
     width: 100%;
     height: 65px;
-    background: #D6D4D4;
+    background: #adadad;
     padding: 14px 14px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+   
 }   
 #logo {
     height: 100%;
@@ -40,8 +42,10 @@ nav {
     background: #C9A8A8;
 }
 main {
-    display: flex;
-    
+    display: flex; 
+}
+#navv{
+    position: fixed;
 }
 #nav1{
     width:100%;
@@ -49,6 +53,7 @@ main {
     height: 65px;
     display: flex;
     justify-content: space-around;
+    margin-top: 65px;
 }
 
 #nav1 ul {
@@ -63,6 +68,7 @@ main {
     box-sizing: border-box;
   
 }
+
 #nav1 ul {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -74,26 +80,76 @@ main {
     width:609px;
     height:321px;
     background: #C5BDB1;
+    align-items: center;
+    margin-top: 26px;
+    margin-left:auto;
+margin-right:auto;
 }
 header{
     width: 1222px;
-    height:90px;
+    height:85px;
     background:#C5BDB1;
+    margin-top: 50px;
+    margin-left:auto;
+margin-right:auto;
 }
 #subline{
     width: 609px;
     height:26px;
-    background:#C5BDB1;
+    background:#D2CAAE;
+    margin-left:auto;
+margin-right:auto;
+margin-top: 26px;
 }
-.bar ul{
+#bar ul{
    list-style: none;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 15px;
-    row-gap: 15px;
+    margin-left:320px;
+margin-right:px;
+margin-top: 35px;
 }
-.bar li {
+#bar li {
     height: 50px;
     width: 107px;
     background:#D2CAAE;
+    margin-left:auto;
+margin-right:auto;
 }
+
+#box1{
+    width: 680px;
+    height:65px;  
+    background:#D2CAAE;
+    margin-left:43px;
+    margin-top: 130px;
+    float: left;
+}
+#box2{
+    width: 680px;
+    height:65px;  
+    background:#C5BDB1;
+    margin-left:43px;
+    margin-top: 23px;
+    float: left;
+}
+#box3{
+    width: 680px;
+    height:330px;  
+    background:#C5BDB1;
+    margin-left:43px;
+    margin-top: 23px;
+    margin-bottom:100px;
+    float: left;
+}
+#box4{
+    width: 553px;
+    height:560px;  
+    background:#C5BDB1;
+    margin-left:60px;
+    margin-top: 91px;
+    margin-bottom:100px;
+    margin-right:50px;
+    float: right;
+}
+
