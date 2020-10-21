@@ -16,28 +16,28 @@ nav {
 }   
 #logo {
     height: 100%;
-    width: 183px;
+    width: 12%;
     background: #C9A8A8;
     margin: 0;
 }
 #search-bar {
-    width: 809px;
+    width: 58%;
     height: 100%;
     background: #C9A8A8;
 }
 #shop {
-    width: 49px;
+    width: 3%;
     height: 100%;
     background: #C9A8A8;
 }
 
 #sign-in {
-    width: 140px;
+    width: 10%;
     height: 100%;
     background: #C9A8A8;
 }
 #sign-up {
-    width: 140px;
+    width: 10%;
     height: 100%;
     background: #C9A8A8;
 }
@@ -51,7 +51,6 @@ main {
     width:100%;
     background: #C1C1C1;
     height: 65px;
-    display: flex;
     justify-content: space-around;
     margin-top: 65px;
 }
@@ -62,7 +61,6 @@ main {
     height: 100%;
 }
 #nav1 li {
-    width: 107px;
     height:38px;
     background: #A8ADC9;
     box-sizing: border-box;
@@ -75,50 +73,54 @@ main {
     column-gap: 15px;
     row-gap: 15px;
     padding: 14px 14px;
+    position:flex;
 }
 #video{
-    width:609px;
+    width:42%;
     height:321px;
     background: #C5BDB1;
     align-items: center;
     margin-top: 26px;
     margin-left:auto;
 margin-right:auto;
+position:flex;
 }
 header{
-    width: 1222px;
+    width: 85%;
     height:85px;
     background:#C5BDB1;
-    margin-top: 50px;
+    margin-top: 48px;
     margin-left:auto;
 margin-right:auto;
 }
 #subline{
-    width: 609px;
+    width: 42%;
     height:26px;
     background:#D2CAAE;
     margin-left:auto;
 margin-right:auto;
 margin-top: 26px;
 }
-#bar ul{
-   list-style: none;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-left:385px;
-margin-right:420px;
-margin-top: 35px;
+    #bar ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        width: 43%;
+        padding: 0;
+        column-gap: 10px;
 }
 #bar li {
     height: 50px;
-    width: 107px;
     background:#D2CAAE;
-    margin-left:auto;
-margin-right:auto;
 }
-
+#boxleft{
+    width: 47%;
+}
 #box1{
-    width: 680px;
+    width: 100%;
     height:65px;  
     background:#D2CAAE;
     margin-left:43px;
@@ -126,30 +128,33 @@ margin-right:auto;
     float: left;
 }
 #box2{
-    width: 680px;
+    width: 100%;
     height:65px;  
     background:#C5BDB1;
     margin-left:43px;
     margin-top: 23px;
     float: left;
+    position:flex;
 }
 #box3{
-    width: 680px;
+    width: 100%;
     height:330px;  
     background:#C5BDB1;
     margin-left:43px;
     margin-top: 23px;
     margin-bottom:100px;
     float: left;
+    position:flex;
+}
+#boxright{
+    width: 41%;
+    float: right;
 }
 #box4{
-    width: 553px;
-    height:560px;  
-    background:#C5BDB1;
-    margin-left:60px;
-    margin-top: 91px;
-    margin-bottom:100px;
-    margin-right:50px;
-    float: right;
+    height: 508px;
+    background: #C5BDB1;
+    margin-top: -26%;
+    margin-right: 50px;
+    
 }
 
