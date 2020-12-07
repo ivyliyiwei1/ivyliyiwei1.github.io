@@ -1,10 +1,11 @@
 window.addEventListener("load", function() {
     var element = document.getElementById('myimage');
+    var homeImage = document.getElementById('homeimage');
     var count = 0;
     var number = document.getElementById('number');
     var started = 0;
     //count variable set to 0
-
+    
     document.addEventListener('keydown', onKeyDown);
     document.addEventListener('keyup', onKeyUp);
     document.body.onkeydown = function (event) {
@@ -17,31 +18,38 @@ window.addEventListener("load", function() {
     }
 
     function onKeyDown(evt) {
-        if(evt.keyCode === 32) {
+        if(evt.keyCode === 32) {       	        	
             if (started == 0){
             number.textContent = count;    
             }
+            if (started == 1)
+            countNumber();
+            else 
+            {
+            	started = 1;
+            	homeImage.style.display="none";
+            	element.style.display="inline"
+            }
+            
             if (count < 5)
-            element.src="img/situp.png";
+            element.src="images/situp.jpg";
             if (count >= 5 && count < 10)
-            element.src="img/situp1.png";
+            element.src="images/situp1.jpg";
             if (count >= 10)
-            element.src="img/situp2.png";
+            element.src="images/situp2.jpg";
+
         }
     }
 
     function onKeyUp(evt) {
         if(evt.keyCode === 32) {
             if (count < 5)
-            element.src="img/sitdown.png";
+            element.src="images/sitdown.jpg";
             if (count >= 5 && count < 10)
-            element.src="img/sitdown1.png";
+            element.src="images/sitdown1.jpg";
             if (count >= 10)
-            element.src="img/sitdown2.png";
-            if (started == 1)
-            countNumber();
-            else {started = 1;
-            }
+            element.src="images/sitdown2.jpg";
+
         }
     }
 
