@@ -28,6 +28,11 @@ h5 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+#myimage{
+	object-fit: contain;
+	height: 100%;
+	width:100%;
+}
 /* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
@@ -201,7 +206,7 @@ ul li {
 }
 .img li{
 	height:20vw;
-	width: 100%;
+	width: 96%;
     background: #ffffff;
 	box-sizing: border-box;
 }
