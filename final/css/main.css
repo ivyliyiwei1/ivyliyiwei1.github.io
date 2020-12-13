@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700); 
+
 p {
 	font-size: 14px;
 	line-height: 22.4px;
@@ -17,17 +17,7 @@ h3 {
 	color: #2d3033;
 	font-weight: 300;
 }
-h4 {
-	font-size: 22px;
-	color: #b1b1b1;
-	font-weight: 400;
-}
-h5 {
-	font-size: 14px;
-	color: #2d3033;
-	text-transform: uppercase;
-	font-weight: 700;
-}
+
 #myimage{
 	object-fit: contain;
 	height: 100%;
@@ -40,16 +30,15 @@ a {
 	color: #e84545;
 }
 a:hover, a:focus {
-	text-decoration: none;
-	-moz-transition: background-color, color, 0.3s;
-	-o-transition: background-color, color, 0.3s;
-	-webkit-transition: background-color, color, 0.3s;
-	transition: background-color, color, 0.3s;
+	-moz-transition: color, 0.3s;
+	-o-transition: color, 0.3s;
+	-webkit-transition: color, 0.3s;
+	transition: color, 0.3s;
 }
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
-	color: #6c7279;
+	color: #777c81;
 	background: #010101;
 }
 ul, ol {
@@ -88,7 +77,6 @@ ul li {
 	font-size:24px;
 	font-weight:700;
 	color: #000;
-	text-decoration:none;
 	letter-spacing:7px;
 	position: absolute;
 	top: 0px;
@@ -118,17 +106,7 @@ ul li {
 	border-bottom: 0;
 	padding: 25px 0;
 }
-#header.fixed .nav-toggle {
-	top: 18px;
-}
-.navigation.open {
-	opacity: 0.9;
-	visibility: visible;
-	-moz-transition: opacity 0.5s;
-	-o-transition: opacity 0.5s;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-}
+
 .navigation {
 	float: right;
 }
@@ -168,7 +146,9 @@ ul li {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: left;
-	margin:0;
+	margin-left: 2vw;
+	margin-bottom: 2vw;
+	margin-top: -9vw;
 }
 .banner-text p {
 	color: #ffffff;
@@ -177,6 +157,7 @@ ul li {
 	line-height: 24px;
 	margin-top: 15px;
 	margin-bottom: 0;
+	margin-left: 2vw;
 	text-align: left;
 }
 /* ==========================================================================
@@ -202,7 +183,7 @@ ul li {
     grid-template-columns: repeat(2, 2fr);
     column-gap: 40px;
     row-gap: 40px;
-    padding: 14px 14px;
+    padding: 14px 183px;
 }
 .img li{
 	height:20vw;
@@ -210,12 +191,11 @@ ul li {
     background: #ffffff;
 	box-sizing: border-box;
 }
-/* -----------------------------------------------------------------------------
-Common Styles
-------------------------------------------------------------------------------- */
+
 .section-header{	
 text-align: center;	
 padding-bottom: 30px;
+padding-top: 60px;
 }
 .section-header h2{
 color: #fff;
@@ -226,17 +206,17 @@ font-style: italic;
 }
 .detail{
 color: #fff;
-margin-left: 2%;
+margin-left: 5%;
 }
 .imgg ul{
 	display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 3fr);
     column-gap: 40px;
-    row-gap: 40px;
-    padding: 14px 14px;
+	row-gap: 40px;
+	padding: 14px 190px;
 }
 .imgg li{
-	height:16vw;
+	height:40vw;
 	width: 100%;
     background: #ffffff;
 	box-sizing: border-box;
@@ -244,15 +224,45 @@ margin-left: 2%;
 
 .imggg ul{
 	display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
     row-gap: 40px;
-	padding: 14px 14px;
+	padding: 14px 50px;
 	margin-left: auto;
 }
 .imggg li{
-	height:16vw;
+	height:27vw;
 	width: 100%;
     background: #ffffff;
 	box-sizing: border-box;
-}             
+}  
+
+.imgggg ul{
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+	padding: 14px 205px;
+	margin-left: auto;
+}
+.imgggg li{
+	height:40vw;
+	width: 100%;
+    background: #ffffff;
+	box-sizing: border-box;
+}   
+
+.imgggg1 ul{
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+	padding: 30px 30px;
+	margin-left: auto;
+}
+.imgggg1 li{
+	height:17vw;
+	width: 100%;
+    background: #ffffff;
+	box-sizing: border-box;
+}   
