@@ -1,5 +1,3 @@
-
-
 p {
 	font-size: 14px;
 	line-height: 22.4px;
@@ -23,9 +21,7 @@ h3 {
 	height: 100%;
 	width:100%;
 }
-/* ------------------------------------------------------------------------------
-	Global Styles
--------------------------------------------------------------------------------*/
+
 a {
 	color: #e84545;
 }
@@ -51,9 +47,8 @@ ul li {
 .section {
 	padding: 100px 0;
 }
-/* ------------------------------------------------------------------------------
-	Header
--------------------------------------------------------------------------------*/
+
+
 #header {
 	position: fixed;
 	width: 100%;
@@ -62,8 +57,8 @@ ul li {
 	min-height: 72px;
 }
 #header .header-content {
-	margin: 0 auto;
-	max-width: 1170px;
+	margin: auto auto;
+	max-width: 85%;
 	padding: 60px 0;
 	width: 100%;
 	-moz-transition: padding 0.3s;
@@ -117,7 +112,7 @@ ul li {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 600;
-	margin-left: 40px;
+	margin-left: 30px;
 	text-transform: uppercase;
 }
 .navigation a:hover {
@@ -157,9 +152,8 @@ ul li {
 	margin-left: 2vw;
 	text-align: left;
 }
-/* ==========================================================================
-	$intro
-========================================================================== */
+
+
 .intro {
 	background-color: #ffffff;
 }
@@ -175,14 +169,14 @@ ul li {
 	font-weight: 400;
 	font-size: 15px;
 }
-.img ul{
+.fourimages ul{
 	display: grid;
     grid-template-columns: repeat(2, 2fr);
     column-gap: 40px;
     row-gap: 40px;
     padding: 14px 183px;
 }
-.img li{
+.fourimages li{
 	height:20vw;
 	width: 96%;
     background: #ffffff;
@@ -205,21 +199,21 @@ font-style: italic;
 color: #fff;
 margin-left: 5%;
 }
-.imgg ul{
+.threeimages_horizontal ul{
 	display: grid;
     grid-template-columns: repeat(1, 3fr);
     column-gap: 40px;
 	row-gap: 40px;
 	padding: 14px 190px;
 }
-.imgg li{
+.threeimages_horizontal li{
 	height:40vw;
 	width: 100%;
     background: #ffffff;
 	box-sizing: border-box;
 }
 
-.imggg ul{
+.twoimages ul{
 	display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
@@ -227,14 +221,14 @@ margin-left: 5%;
 	padding: 14px 50px;
 	margin-left: auto;
 }
-.imggg li{
+.twoimages li{
 	height:27vw;
 	width: 100%;
     background: #ffffff;
 	box-sizing: border-box;
 }  
 
-.imgggg ul{
+.oneimage ul{
 	display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 40px;
@@ -242,14 +236,14 @@ margin-left: 5%;
 	padding: 14px 205px;
 	margin-left: auto;
 }
-.imgggg li{
+.oneimage li{
 	height:40vw;
 	width: 100%;
     background: #ffffff;
 	box-sizing: border-box;
 }   
 
-.imgggg1 ul{
+.siximages ul{
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
@@ -257,9 +251,69 @@ margin-left: 5%;
 	padding: 30px 30px;
 	margin-left: auto;
 }
-.imgggg1 li{
+.siximages li{
 	height:17vw;
 	width: 100%;
     background: #ffffff;
 	box-sizing: border-box;
 }   
+
+/* Mobile-Ipad */
+@media (max-width: 830px) {
+    .logo{  
+	display: none;
+}
+    .navigation{
+		float: left;
+	}.header-content {
+	max-width: 80%;
+	}
+.fourimages ul{
+	display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    column-gap: 10px;
+    padding: 14px 100px;
+}
+.fourimages li{
+	height:45vw;
+	width:100%;
+}
+.threeimages_horizontal ul{
+	padding: 14px 100px;
+}
+.twoimages ul{
+    grid-template-columns: repeat(1, 2fr);
+	padding: 14px 100px;
+}
+.twoimages li{
+	height:45vw;
+	width: 100%;
+    background: #ffffff;
+	box-sizing: border-box;
+}  
+
+.oneimage ul{
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+	padding: 14px 100px;
+	margin-left: auto;
+}
+.oneimage li{
+	height:42vw;
+}   
+
+
+.siximages ul{
+	display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    column-gap: 30px;
+    row-gap: 30px;
+	padding: 30px 30px;
+	margin-left: auto;
+}
+.siximages li{
+	height:25vw;
+}   
+}
