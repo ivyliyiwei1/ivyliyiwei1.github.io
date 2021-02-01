@@ -1,17 +1,50 @@
 body{
     background-color: black;
 }
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 80px;
+  color: white;
+  text-indent: 19.2%;
+  margin-top: 125px;
+  font-weight: lighter;
+}
+.box{
+    width: 870px;
+    margin: 0 auto;
+    padding:10px;
 
+}
 .animal{
   height: 100%;
   width: 100%;
 object-fit: cover;
-  margin: 0 2rem 1rem 0;
+
 }
-.plus{
+.plus, .question{
     font-size: 100px;
+    display: inline;
+      float: left;
+      padding: 30px;
+    }
+.question{
+  font-size: 110px;
+}
+.equal{
+     color: white;
+        font-size: 150px;
+    display: inline;
+      float: left;
+      padding-top: 0px;
+      padding-left: 45px;
+         padding-right: 10px;
 }
 .imgbox img{
     width: 200px;
     height: 200px;
+    display: flex;
+    float: left;
+}
+a{
+text-decoration: none;
 }
