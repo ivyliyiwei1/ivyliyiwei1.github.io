@@ -6,7 +6,7 @@ h1{
   font-size: 80px;
   color: white;
   text-indent: 19.2%;
-  margin-top: 140px;
+  margin-top: 50px;
   font-weight: lighter;
 }
 .box{
@@ -40,10 +40,11 @@ object-fit: cover;
          padding-right: 10px;
 }
 .imgbox img{
-    width: 200px;
-    height: 200px;
+    width: 560px;
+    height: 315px;
     display: flex;
     float: left;
+    padding-top: 10px;
 }
 a{
 text-decoration: none;
@@ -62,4 +63,14 @@ background-color: rgb(26, 19, 19);
 	-webkit-transition: color, 0.5s;
     transition: color, 0.5s;
     
+}
+iframe{
+  float: left;
+text-align: center;
+border: medium none;
+}
+.video{
+  padding: 10px,10px;
+  margin: 0, auto;
+  padding-top: 20px;
 }
