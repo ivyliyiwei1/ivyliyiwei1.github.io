@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="Eg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js"></script>
+    <title>In</title>
+    <style>
+        /* 给最外层父级设置景深，让里面的元素有立体的空间，并且设置宽高 */
+        .wrapper {
+            /* 景深600像素 */
+            perspective: 500px;
+            /* 设置margin距离上面100px，左右自适应，下面0 */
+            margin: 240px auto 0;
+            width: 200px;
+            height: 200px;
+            /* border: 1px solid black; */
+        }
+
+        .box {
+            /* 设置相对定位好让子元素相对于自己定位 */
+            position: relative;
+            /* 给item设置保留3D效果，如果没有设置里面的元素将不会呈现3D效果 */
+            transform-style: preserve-3d;
+            width: 200px;
+            height: 200px;
+            /* move为设置的关键帧，运动8秒，匀速运动，无限次（各个参数代表的含义） */
+            animation: move 8s linear infinite;
+        }
+
+        /* 选择所有开头带有item的元素，使其全部定位到父级所在的位置 */
+        div[class^="item"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            /* 使文本左右对齐 */
+            text-align: center;
+            /* 使文本上下对齐 */
+            line-height: 200px;
+        }
+
+        /* 立方体有六面，每个item1~6代表每一面，此时里面的item1~6具有三条轴，x，y，z */
+        /* x轴即是你电脑屏幕宽度的那条轴，从左到右。y轴即是你电脑屏幕高度的那条轴，从上到下。z轴即是你眼睛垂直看电脑屏幕的那条轴，方向从电脑屏幕到你的眼睛*/
+        /* 设置第一面 */
+        .item1 {
+            /* 沿z轴向你眼睛方向移动100px */
+            transform: translateZ(100px);
+            /* 设置背景颜色，最后一个参数为透明度设置为0.6 */
+            background-color: rgba(238, 238, 238, 0.6);
+        }
+
+        /* 设置第二面 */
+        .item2 {
+            /* 沿z轴向里移动100px即为-100px */
+            transform: translateZ(-100px);
+            background-color: rgba(202, 202, 202, 0.6);
+        }
+
+        /* 设置第三面 */
+        .item3 {
+            /* 沿x轴旋转90度，然后再向z轴移动100px（deg在这里表示度的意思） */
+            transform: rotateX(90deg) translateZ(100px);
+            background-color: rgba(164, 164, 164, 0.6);
+        }
+
+        /* 设置第四面 */
+        .item4 {
+            /* 沿x轴旋转90度，然后再向z轴移动-100px */
+            transform: rotateX(90deg) translateZ(-100px);
+            background-color: rgba(247, 247, 247, 0.6);
+        }
+
+        /* 设置第五面 */
+        .item5 {
+            /* 沿y轴旋转90度，然后再向z轴移动-100px */
+            transform: rotateY(90deg) translateZ(-100px);
+            background-color: rgba(170, 170, 170, 0.6);
+        }
+
+        /* 设置第六面 */
+        .item6 {
+            /* 沿y轴旋转90度，然后向z轴移动100px */
+            transform: rotateY(90deg) translateZ(100px);
+            background-color: rgba(201, 201, 201, 0.6);
+        }
+
+        /* 设置关键帧让box容器旋转起来，分别沿x，y，z轴从0旋转360度 */
+        @keyframes move {
+            0% {
+                transform: rotateX(0) rotateY(0) rotateZ(0);
+            }
+
+            100% {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="item1">In</div>
+            <div class="item2">Praise</div>
+            <div class="item3">of</div>
+            <div class="item4">SHADOWS</div>
+            <div class="item5">⇅</div>
+            <div class="item6">⇆</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="topdiv">This is a 100% height div. User scrolls down from here.</div>
+
+        <div class="fadethisdiv">This content should be faded in
+            once .fadethisdiv is [so many]px into the bottom of the viewport.
+            Let's use 150px as an example.</div>
+
+    </div>
+</body>
+
+</html>
