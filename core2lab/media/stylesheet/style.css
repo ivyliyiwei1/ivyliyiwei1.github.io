@@ -1,0 +1,106 @@
+
+body {
+  background-color: tan;
+}
+div{
+            width: 200px;
+            height: 200px;
+            border-radius: 0%;
+            margin:0 auto;
+            background-color: rgb(36, 0, 0);
+            position: relative;
+            animation-name: square;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes square {
+            0% {
+                background-color:  rgb(165, 52, 52);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(73, 0, 0);
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: rgb(126, 0, 0);
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: rgb(87, 35, 35);
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: rgb(165, 52, 52);
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+@media screen and (max-width: 992px) {
+body {
+    background-color: rgb(71, 71, 131);
+  }
+div{
+    animation-direction: reverse;
+    animation-name: square;
+     border-radius: 25%;
+}
+  @keyframes square {
+            0% {
+                background-color: rgb(82, 76, 0);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(109, 89, 2);
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: rgb(156, 154, 1);
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: rgb(184, 181, 3);
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: rgb(82, 76, 0);
+                left: 0px;
+                top: 0px;
+            }
+        }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+  div {
+      animation: bounce 1s;
+      border-radius: 50%;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);  background-color: rgb(134, 109, 128);  }
+  to   { transform: translate3d(0, 200px, 0); background-color: rgb(80, 59, 75); }
+}
+}
