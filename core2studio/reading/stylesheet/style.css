@@ -33,6 +33,8 @@ margin:0;
 /* homepage */
 #home{
     background-color: #DDDDDD;
+    background-size: 100%;
+    height:744px;
 }
 .arrow{
 Font-family: BC Alphapipe;
@@ -472,6 +474,8 @@ text-shadow: 1px 1px rgb(202, 202, 202), -1px -1px rgb(119, 119, 119);
 /* pt5 */
 #pt5{
     background-color: #989898;
+    height: 960px;
+    width: auto;
 }
 #pt5arrow{
     text-shadow: 1px 1px rgb(230, 230, 230), -1px -1px rgb(95, 95, 95);
