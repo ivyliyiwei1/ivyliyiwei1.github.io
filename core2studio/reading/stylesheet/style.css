@@ -29,6 +29,15 @@ color: #949494;
 text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 margin:0;
 }
+.hideme
+{
+opacity:0;
+-webkit-transition: all 1s ease; transition: all 1s ease;
+}
+
+.showme {
+  opacity:1!important;
+}
 /* box */
 .wrapper {
     perspective: 500px;
@@ -198,7 +207,6 @@ text-align: center;
 text-transform: uppercase;
 color: #C4C4C4;
 text-shadow: 1px 1px rgb(230, 230, 230), -1px -1px rgb(95, 95, 95);
-width: 531px;
 height: 216px;
 }
 .highlight{
@@ -216,10 +224,10 @@ transition: color, 0.9s;
     color:#FFE921
 }
 .container{
-    width: 531px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 165px;
+    width: 80%;
 }
 /* pt1 */
 #pt1{
@@ -827,7 +835,7 @@ margin-top:30px;
     background-color: #ffe926;
     opacity: 0.8;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
     /* cube */
 #side1 {
     background-color: #DEDEDE;
@@ -854,8 +862,8 @@ height: 430px;
 margin: 17px auto;
 }
 .maincontent{
-font-size: 19.5px;
-line-height: 30px;
+font-size: 16.5px;
+line-height: 26px;
 text-align: justify;
 color: #949494;
 text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -866,11 +874,13 @@ margin:0;
     margin-top: 155px;
 }
 .title{
-font-size: 68px;
-line-height: 88px;
+font-size: 57px;
+line-height: 75px;
+width: auto;
 }
 .container{
-    margin-top: 160px;
+margin:0 auto;
+margin-top: 135px;
 }
 /* pt1 */
 #pt1{
@@ -880,24 +890,24 @@ background-color: #727272;
     color:#3a3a3a;
 }
 .weight{
-font-size: 95px;
-line-height: 110px;
+font-size: 74px;
+line-height: 35px;
 color:#3a3a3a;
 }
 
 .height{
-font-size: 100px;
+font-size: 74px;
 line-height: 0px;
 text-align: center;
 color: #505050;
 text-shadow: 1px 1px rgb(202, 202, 202), -1px -1px rgb(119, 119, 119);
 }
 .letter{
-margin-top: 95px;
-margin-bottom: 90px;}
+margin-top: 82px;
+margin-bottom: 80px;}
 
 #first{
-margin-top: 70px;
+margin-top: 80px;
 }
 #last{
 margin-bottom: 5px;
@@ -906,7 +916,7 @@ margin-bottom: 5px;
 font-family: BC Alphapipe;
 font-style: normal;
 font-weight: 300;
-font-size: 50px;
+font-size: 36px;
 line-height: 55px;
 text-align: center;
 color:#3a3a3a;
@@ -914,12 +924,12 @@ margin: 0 auto;
 margin-top: 65px;
 }
 .surface{
-font-size: 95px;
+font-size: 74px;
 line-height: 110px;
 color:#B7B7B7;
 }
 .quote-gray{
-font-size: 40px;
+font-size: 36px;
 line-height: 108.9%;
 text-align: center;
 color:#3a3a3a;
@@ -936,21 +946,22 @@ color: #989898;
 background-color: #989898;
 }
 #pt2leftquote{
-    font-size: 39px;
+    font-size: 35px;
 }
 #pt2rightquote{
- font-size: 39px;
+ font-size: 35px;
+ margin-top: 15px;
 }
 .tribox{
     margin-top: 355px;
 }
 .parasol{
-font-size: 95px;
+font-size: 74px;
 text-align: center;
 color: #ffffff;
 text-shadow: 0px 4px 4px rgb(0 0 0 / 45%);
 z-index: 9999;
-margin-top: 80px;
+margin-top: 99px;
 position:absolute}
 .triangle{
 width: 0;
@@ -964,17 +975,17 @@ margin-top:-332px;
 }
 #throw{
 text-align: center;
-font-size: 40px;
+font-size: 35px;
 margin-top: 20px;
 }
 .shadows{
-font-size: 83px;
+font-size: 61px;
 line-height: 124px;
 color: #C4C4C4;
 }
 #on{
 text-align: center;
-font-size: 40px;
+font-size: 35px;
 margin-top: -10px;
 }
 .circle {
@@ -986,7 +997,7 @@ background-color: #C4C4C4;
 font-family: BC Alphapipe;
 font-style: normal;
 font-weight: 300;
-font-size: 95px;
+font-size: 74px;
 line-height: 285px;
 text-align: center;
 color: #FFFFFF;
@@ -998,13 +1009,13 @@ margin-top: 30px;
 color:#3a3a3a;  
 }
 #pt2leftquoteyellow{
-    font-size: 95px;
+    font-size: 74px;
     line-height: 80px;
     margin-top: 40px;
     text-shadow: 1px 1px rgb(230, 230, 230), -1px -1px rgb(95, 95, 95,0.25);
 }
 #pt2rightquoteyellow{
-    font-size: 95px;
+    font-size: 74px;
     line-height: 80px;
     text-shadow: 1px 1px rgb(230, 230, 230), -1px -1px rgb(95, 95, 95,0.25);
 }
@@ -1020,7 +1031,7 @@ background-color: #B7B7B7;
 }
 #pt3quote{
 text-align: center;
-font-size: 35px;
+font-size: 28px;
 }
 .heavy{
 font-size: 50px;
@@ -1028,7 +1039,7 @@ color: #666666;
 }
 #againist, #pt3quote2{
 text-align: center;
-font-size: 35px;
+font-size: 28px;
 margin-top: 18px;
 }
 .light{
@@ -1044,7 +1055,7 @@ margin: 20px auto;
 }
 #pt3quote3{
 text-align: center;
-font-size: 35px;
+font-size: 28px;
 text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.25);
 color: #3a3a3a;
 margin-bottom: 10px;
@@ -1056,7 +1067,7 @@ margin-bottom: 10px;
 font-family: BC Alphapipe;
 font-style: normal;
 font-weight: 200;
-font-size: 85px;
+font-size: 61px;
 color: #ffffff;
 text-align: center;
 margin-top: 20px;
@@ -1072,14 +1083,14 @@ color: #CCCCCC;
     background-color: #CCCCCC;
 }
 #emoji, #pt4quote, #init{
-font-size: 40px;
+font-size: 29px;
 line-height: 110%;
 color: #DEDEDE;
 }
 .graybox{
     width: 70%;
     border: 10px #989898;
-    height: 420px;
+    height: 320px;
     margin: 0  auto;
     background-color: #989898;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
@@ -1101,7 +1112,6 @@ background-color: #DEDEDE;}
 #content5{
 color: #797979;
 }
-}
 #next6{
 Font-size: 70px;
 Line-height: 105px;
@@ -1122,18 +1132,10 @@ width: 75%;
 height: 430px;
 margin: 17px auto;
 }
-.maincontent{
-font-size: 19.5px;
-line-height: 30px;
-text-align: justify;
-color: #949494;
-text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-margin:0;
-}
 #red{
     color:#8A1900;
     padding-top: 105px;
-    font-size: 45px;
+    font-size: 35px;
 }
 #content7a{
     margin-top: 36px;
@@ -1156,22 +1158,22 @@ margin:0;
 #silver{
 color: #505050;
 text-align: left;
-font-size: 45px;
+font-size: 35px;
 line-height: 110%;
 }
 #lightyellow{
     line-height: 110%;
-font-size: 45px;
+font-size: 35px;
 }
 #reda{
     padding-top: 0px;
-    font-size: 45px;
+    font-size: 35px;
     margin-top: 20px;
 }
 .last{
    color:#EEEEEE; 
    margin-top: 20px;
   font-size:120px;
-    text-shadow: 1px 1px rgb(230, 230, 230), 54re3wqa-1px -1px rgb(95, 95, 95);  
+    text-shadow: 1px 1px rgb(230, 230, 230),-1px -1px rgb(95, 95, 95);  
 }
 }
