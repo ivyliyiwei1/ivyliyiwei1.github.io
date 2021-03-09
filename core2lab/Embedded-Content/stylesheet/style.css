@@ -1,6 +1,10 @@
 body{
     background-color: rgb(54, 48, 48);
 }
+.wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}
 h1{
   font-family: 'Courier New', Courier, monospace;
   font-size: 80px;
@@ -13,7 +17,6 @@ h1{
     width: 870px;
     margin: 0 10%;
     padding:10px;
-    display: flex;
 
 }
 .animal{
@@ -25,26 +28,21 @@ object-fit: cover;
 .plus, .question{
     font-size: 100px;
     display: inline;
-      float: left;
       padding: 30px;
     }
 .question{
   font-size: 110px;
 }
-.equal{
+#equal{
      color: white;
         font-size: 150px;
-    display: inline;
       float: left;
       padding-top: 0px;
-      padding-left: 30px;
          padding-right: 30px;
 }
-.imgbox img{
+.imgbox{
     width: 560px;
     height: 315px;
-    display: flex;
-    float: left;
     padding-top: 10px;
 }
 a{
