@@ -1,0 +1,70 @@
+body{
+    font-family:Helvetica;
+    background-color: #fff;
+}
+.hidden{
+display: none !important;
+}
+.wrap{
+    display: flex;
+    margin-left: 20px;
+}
+.block{
+display: flex;
+flex-wrap: wrap;
+max-width: 700px;
+}
+.colorblock{
+background-color:gray;
+color: white;
+height: 160px;
+width: 160px;
+cursor:pointer;
+margin-bottom: 13px;
+margin-right: 13px;
+}
+.block .colorblock .active{
+    border: 1px solid rgb(65, 119, 182);
+}
+.block .colorblock:hover{
+    border: 1px solid rgb(57, 133, 146);
+}
+.list-detail{
+    display: block;
+}
+.list-detail .figure{
+width: 160px;
+flex: none;
+}
+.book-detail{
+width: 160px;
+border: 0.5px solid black;
+box-sizing: border-box;
+}
+.title{
+    font-size: 22px;
+}
+.picture{
+width: 150px;
+height: 110px;
+overflow: hidden;
+}
+.emptyblock{
+    float: right;
+      display: flex;
+}
+#draggable {
+width: 200px;
+height: 20px;
+text-align: center;
+background: gray;
+}
+.dropzone{
+float: right;
+display: flex;
+width: 100px;
+height: 35px;
+margin: 10px;
+padding: 10px;
+border: 1px solid black;
+}

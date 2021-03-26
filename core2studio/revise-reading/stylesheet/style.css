@@ -1,0 +1,160 @@
+@import url("https://use.typekit.net/aab0yxu.css");
+/* home */
+.largebox{
+    width: 100%;
+    display: inline;
+}
+#headbox{
+margin-top: 215px;
+}
+.leftbox{
+width: 50%;
+float: left;
+}
+.textwrapper{
+margin: 0 auto;
+}
+.heading{
+font-family: bc-alphapipe,sans-serif;
+font-weight: 400;
+font-size: 80px;
+color: #788263;
+font-style: normal;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
+}
+.rightbox{
+display: inline;
+float: right;
+width: 47%;
+}
+#contentbox{
+
+margin-top: 35px;
+}
+.content{
+list-style: none;
+font-family: semplicitapro, sans-serif;
+font-weight: 400;
+font-size: 40px;
+font-style: normal;
+margin: 0 auto;
+width: 100%;
+}
+.pt1{
+    color: #EEEEEE;
+}
+.pt2{
+    color: #DEDEDE;
+}
+.pt3{
+    color: #CCCCCC;
+}
+.pt4{
+    color: #B7B7B7;
+}
+.pt5{
+    color: #989898;
+}
+.pt6{
+    color: #727272;
+}
+.pt7{
+    color: #393939;
+}
+a{
+    text-decoration: none;
+}
+.content a:hover{
+text-decoration: underline;
+color:#788263;
+}
+/* pt1 */
+#pt1{
+    background-color: #E5E5E5;
+}
+#box1pt1{
+width: 48%;
+margin-top: 25px;
+}
+.paragraph{
+list-style: none;
+font-family: semplicitapro, sans-serif;
+font-weight: 400;
+font-size: 22px;
+font-style: normal;
+color: #797979;
+}
+#textpt1{
+margin-left:2% ;
+}
+.pt1click{
+    color: #E5E5E5;
+    font-weight: 600;
+}
+.pt1click:hover{
+    color: #788263;
+    text-decoration: underline dotted;
+}
+#pt1p2{
+    display: none;
+}
+.pt1click:active{
+    color: #788263;
+}
+#pt1click3:hover{
+    text-decoration: underline;
+}
+#pt1click4{
+    color: #788263;
+}
+#pt1click4:hover{
+    color: #E5E5E5;
+    text-decoration: underline dotted;
+}
+#box2pt1{
+margin-top: 189px;
+width: 43%;
+}
+#pt1p4{
+    text-align:right;
+    color: #E5E5E5;
+}
+#text1pt1{
+margin-right:5% ;
+}
+.pt1largeword{
+font-family: semplicitapro, sans-serif;
+font-weight: 600;
+font-style: italic;
+font-size: 41pt;
+color: #E5E5E5;
+}
+.pt1largeword:hover{
+text-decoration: underline dotted;
+}
+#weight{
+font-weight: 700;
+text-align: right;
+}
+#height{
+text-align: left;
+font-weight: 500;
+}
+#surface{
+text-align: right;
+color: white;
+text-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
+}
+#box2apt1{
+    width: 100%;
+    
+}
+#eaves{
+    text-align: right;
+    margin-right:2%;
+    text-decoration: none;
+}
+#pt1next:hover{
+    text-decoration: underline;
+}
