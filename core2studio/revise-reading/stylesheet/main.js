@@ -3,9 +3,62 @@ function pt1showp2() {
     var x = document.getElementById("pt1p2");
     if (x.style.display != "block") {
         x.style.display = "block";
-        document.getElementById("pt1click1").style.color = "#ff0000";
+        document.getElementById("pt1click1").style.color = "#788263";
+        document.getElementById("pt1click1").style.textDecoration = "underline dotted";
 
     } else {
         x.style.display = "none";
     }
+}
+function pt1showp3() {
+    var x = document.getElementById("pt1p3");
+    if (x.style.display != "block") {
+        x.style.display = "block";
+        document.getElementById("pt1click2").style.color = "#788263";
+        document.getElementById("pt1click2").style.textDecoration = "underline dotted";
+
+    } else {
+        x.style.display = "none";
+    }
+}
+
+var toggle = "true";
+function pt1changebgc() {
+    toggle = !toggle;
+    document.getElementById("pt1").style.background = toggle ? "#E5E5E5" : "#788263";
+    document.getElementById("pt1p1").style.color = toggle ? "#797979" : "#788263";
+    document.getElementById("pt1p2").style.color = toggle ? "#797979" : "#788263";
+    document.getElementById("pt1p3").style.color = toggle ? "#797979" : "#788263";
+    document.getElementById("pt1click1").style.color = toggle ? "#788263" : "#E5E5E5";
+    document.getElementById("pt1click2").style.color = toggle ? "#788263" : "#E5E5E5";
+    document.getElementById("pt1click3").style.color = toggle ? "#788263" : "#E5E5E5";
+    // 前面的是true
+}
+function pt1showwords() {
+    var x = document.getElementById("bigwords");
+    if (x.style.display != "block") {
+        x.style.display = "block";
+        document.getElementById("pt1click4").style.color = "#E5E5E5";
+        document.getElementById("pt1click4").style.opacity = "100";
+        document.getElementById("pt1click4").style.textDecoration = "underline dotted";
+    }
+    else {
+        x.style.display = "none";
+    }
+}
+function pt1showlast() {
+    var x = document.getElementById("box2apt1");
+    if (x.style.display != "block") {
+        x.style.display = "block";
+        document.getElementById("surface").style.color = "#E5E5E5";
+        document.getElementById("surface").style.textDecoration = "underline dotted";
+    }
+    else {
+        x.style.display = "none";
+    }
+}
+function pt2show() {
+    toggle = !toggle;
+    document.getElementById("pt2showbox").style.display = toggle ? "block" : "none";
+    document.getElementById("pt2show").innerHTML = toggle ? "hide a parasol" : "spread a parasol";
 }

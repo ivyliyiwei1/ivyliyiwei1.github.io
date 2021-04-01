@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/aab0yxu.css");
 /* home */
+body{
+font-family: semplicitapro, sans-serif;
+font-weight: 400;
+font-size: 22px;
+}
 .largebox{
     width: 100%;
     display: inline;
@@ -91,12 +96,13 @@ margin-left:2% ;
 .pt1click{
     color: #E5E5E5;
     font-weight: 600;
+    cursor: pointer;
 }
 .pt1click:hover{
     color: #788263;
     text-decoration: underline dotted;
 }
-#pt1p2{
+#pt1p2, #pt1p3{
     display: none;
 }
 .pt1click:active{
@@ -106,10 +112,11 @@ margin-left:2% ;
     text-decoration: underline;
 }
 #pt1click4{
-    color: #788263;
+    color: #E5E5E5;
+    opacity: 0;
 }
 #pt1click4:hover{
-    color: #E5E5E5;
+    opacity: 100;
     text-decoration: underline dotted;
 }
 #box2pt1{
@@ -130,9 +137,6 @@ font-style: italic;
 font-size: 41pt;
 color: #E5E5E5;
 }
-.pt1largeword:hover{
-text-decoration: underline dotted;
-}
 #weight{
 font-weight: 700;
 text-align: right;
@@ -143,8 +147,11 @@ font-weight: 500;
 }
 #surface{
 text-align: right;
-color: white;
-text-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
+color: #E5E5E5;
+}
+#surface:hover{
+text-decoration: underline dotted;
+cursor: pointer;
 }
 #box2apt1{
     width: 100%;
@@ -153,8 +160,48 @@ text-shadow: 0px 4px 4px rgba(85, 85, 85, 0.25);
 #eaves{
     text-align: right;
     margin-right:2%;
+    color: #E5E5E5;
     text-decoration: none;
+}
+#pt1next{
+    color: #E5E5E5;
 }
 #pt1next:hover{
     text-decoration: underline;
+}
+#bigwords, #box2apt1{
+    display: none;
+}
+
+/* pt2 */
+#pt2{
+background-color: #DEDEDE;
+}
+.pt2wrapper{
+    text-align: center;
+    color:#797979;
+}
+.pt2display{
+width: 26%;
+margin: 0 auto;
+}
+#pt2show:hover{
+font-weight:800;
+text-decoration: underline dashed;
+}
+#pt2showbox{
+margin: 0 auto;
+display: none;
+}
+.pt2p2{
+width: 46%;
+margin: 0 auto;
+}
+.pt2p3{
+width: 66%;
+margin: 0 auto;
+}
+.pt2p4{
+width: 86%;
+margin: 0 auto;
 }
