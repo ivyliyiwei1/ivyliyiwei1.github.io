@@ -17,17 +17,21 @@ max-width: 700px;
 .colorblock{
 background-color:gray;
 color: white;
-height: 160px;
-width: 160px;
+height: 50px;
+width: 50px;
 cursor:pointer;
 margin-bottom: 13px;
 margin-right: 13px;
 }
-.block .colorblock .active{
-    border: 1px solid rgb(65, 119, 182);
+h1{
+    text-align: right;
+    text-transform: uppercase;
+}
+.block .colorblock :active{
+    border: 3px solid rgb(182, 0, 0);
 }
 .block .colorblock:hover{
-    border: 1px solid rgb(57, 133, 146);
+    border: 3px solid rgb(168, 77, 77);
 }
 .list-detail{
     display: block;
@@ -42,29 +46,36 @@ border: 0.5px solid black;
 box-sizing: border-box;
 }
 .title{
-    font-size: 22px;
+    font-size: 21px;
+}
+
+.detailbox{
+    width: 270px;
+    height:165px;
+    padding-top: 2px;
+    display: none;
+}
+.detailbox.active{
+    display: block;
 }
 .picture{
-width: 150px;
-height: 110px;
+width: 177px;
+height: 120px;
 overflow: hidden;
 }
 .emptyblock{
     float: right;
       display: flex;
 }
-#draggable {
-width: 200px;
-height: 20px;
-text-align: center;
-background: gray;
-}
-.dropzone{
+.placename{
+writing-mode: vertical-rl;
+font-size: 13pt;
 float: right;
+margin: 0;
+margin-left: 0px;
+max-height: 164px;
+}
+.container{
 display: flex;
-width: 100px;
-height: 35px;
-margin: 10px;
-padding: 10px;
-border: 1px solid black;
+flex-wrap: wrap;
 }

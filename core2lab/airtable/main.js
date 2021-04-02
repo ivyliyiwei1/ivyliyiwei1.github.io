@@ -41,13 +41,18 @@ function consoleLogRecords() {
 function showRecords() {
     console.log("showRecords()");
     Music.forEach((record) => {
-        const h2 = document.createElement("h2");
-        h2.innerText = record.fields.title;
-        document.body.appendChild(h2);
+        var title = document.createElement("h2");
+        title.innerText = record.fields.title;
+        document.body.appendChild(title);
 
-        const artist = document.createElement("h3");
+        var artist = document.createElement("h3");
         artist.innerText = record.fields.artist;
         document.body.appendChild(artist);
+
+        var cover = document.createElement("img");
+        cover.src = record.fields.cover[0].url;
+        cover.classList.add("cover");
+        document.body.appendChild(cover);
     });
 
 }

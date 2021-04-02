@@ -46,71 +46,54 @@ function showLists() {
     const block = document.getElementById("block");
 
     geography.forEach((list) => {
-        // create the div set the text and class
-        const div = document.createElement("div");
-        div.innerText = list.fields.color;
-        div.classList.add("colorblock");
-        div.addEventListener("click", () => {
-            showList(list, div);
-        })
+
+        // create the div for my rgb boxes
+        const rgb = document.createElement("div");
+        rgb.innerText = list.fields.color;
+        rgb.classList.add("colorblock");
         // put the newly created book spine on the shelf
-        block.appendChild(div);
+        document.querySelector(".container").appendChild(rgb);
+
+        //create the div for all details
+        const detail = document.createElement("div");
+        detail.classList.add("detailbox");
+        document.querySelector(".container").append(detail);
+
+        // detail page info
+        //image
+        const images = document.createElement("img");
+        images.src = list.fields.images[0].url;
+        images.classList.add("picture");
+        detail.append(images);
+        //title
+        const title = document.createElement("h2");
+        title.innerText = list.fields.name;
+        title.classList.add("placename");
+        detail.append(title);
+
+        //add event listener
+        rgb.addEventListener("click", function () {
+            detail.classList.toggle("active");
+        })
     });
 }
-function showList(list, div) {
-    console.log("showList()", list);
 
-    const listDetail = document.getElementById("list-detail")
+// function showList(list, rgb) {
+//     console.log("showList()", list);
 
-    // populate
-    listDetail.getElementsByClassName("title")[0].innerText = list.fields.name;
-    listDetail.getElementsByClassName("picture")[0].src =
-        list.fields.images[0].url;
+//     const listDetail = document.getElementById("list-detail")
 
-    const block = document.getElementById("block");
-    const colorBlocks = block.getElementsByClassName("active");
-    for (const colorBlock of colorBlocks) {
-        colorBlock.classList.remove("active");
-    }
-    div.classList.add("active");
-    listDetail.classList.remove("hidden");
-}
-// draganddrop
-var dragged;
-document.addEventListener("drag", function (event) {
+//     // populate
+//     listDetail.getElementsByClassName("title")[0].innerText = list.fields.name;
+//     listDetail.getElementsByClassName("picture")[0].src =
+//         list.fields.images[0].url;
 
-}, false);
-document.addEventListener("dragstart", function (event) {
-    dragged = event.target;
-    event.target.style.opacity = .5;
-}, false);
-
-document.addEventListener("dragend", function (event) {
-    // 重置透明度
-    event.target.style.opacity = "";
-}, false);
-
-/* 放置目标元素时触发事件 */
-document.addEventListener("dragover", function (event) {
-    // 阻止默认动作以启用drop
-    event.preventDefault();
-}, false);
-document.addEventListener("dragleave", function (event) {
-    // 当拖动元素离开可放置目标节点，重置其背景
-    if (event.target.className == "dropzone") {
-        event.target.style.background = "";
-    }
-
-}, false);
-document.addEventListener("drop", function (event) {
-    // 阻止默认动作（如打开一些元素的链接）
-    event.preventDefault();
-    // 将拖动的元素到所选择的放置目标节点中
-    if (event.target.className == "dropzone") {
-        event.target.style.background = "";
-        dragged.parentNode.removeChild(dragged);
-        event.target.appendChild(dragged);
-    }
-
-}, false);
+//     const block = document.getElementById("block");
+//     const colorBlocks = block.getElementsByClassName("active");
+//     for (const colorBlock of colorBlocks) {
+//         colorBlock.classList.remove("active");
+//     }
+//     rgb.classList.add("active");
+//     listDetail.classList.remove("hidden");
+// }
 
