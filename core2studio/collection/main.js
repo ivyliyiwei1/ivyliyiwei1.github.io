@@ -42,36 +42,73 @@ function consoleLogLists() {
 }
 function showLists() {
     console.log("showLists()");
-
-    const block = document.getElementById("block");
-
     geography.forEach((list) => {
+        console.log("List", list);
+        // // create the div for my rgb boxes
+        var rgbbox = document.createElement("div");
+        rgbbox.classList.add("colorblock");
+        rgbbox.style.backgroundColor = list.fields.cssrgb;
+        //positioning
+        rgbbox.style.position = "absolute";
+        rgbbox.style.left = list.fields.x;
+        rgbbox.style.top = list.fields.y;
+        // put the newly created box
+        document.querySelector(".wrapforblock").appendChild(rgbbox);
 
-        // create the div for my rgb boxes
-        const rgb = document.createElement("div");
+        // color rgb text
+        var rgb = document.createElement("p");
         rgb.innerText = list.fields.color;
-        rgb.classList.add("colorblock");
+        console.log("list.fields.color", list.fields.color);
+        rgb.classList.add("rgbnumber");
         // put the newly created book spine on the shelf
-        document.querySelector(".container").appendChild(rgb);
+        rgbbox.appendChild(rgb);
 
         //create the div for all details
-        const detail = document.createElement("div");
+        var detail = document.createElement("div");
         detail.classList.add("detailbox");
-        document.querySelector(".container").append(detail);
+        rgbbox.append(detail);
 
         // detail page info
+        //height
+        var title = document.createElement("h3");
+        title.innerText = list.fields.altitude;
+        title.classList.add("altitude");
+        detail.append(title);
         //image
-        const images = document.createElement("img");
+        var images = document.createElement("img");
         images.src = list.fields.images[0].url;
         images.classList.add("picture");
         detail.append(images);
         //title
-        const title = document.createElement("h2");
+        var title = document.createElement("h2");
         title.innerText = list.fields.name;
         title.classList.add("placename");
         detail.append(title);
+        //hue
+        var hue = list.fields.hue;
+        hue.forEach(function (hue) {
+            rgbbox.classList.add(hue)
 
+        });
+        //event listener for filter
+        var filterWarm = document.querySelector('#red');
+        filterWarm.addEventListener("click", function () {
+            if (rgbbox.classList.contains("_warm")) {
+                rgbbox.style.opacity = "0";
+                filterWarm.style.color = "white";
+                filterWarm.style.textDecoration = "line-through";
+            } else {
+                rgbbox.style.opacity = "1";
+            }
+        });
         //add event listener
+        var toggle = "true";
+        rgb.addEventListener("click", function () {
+            toggle = !toggle;
+            document.body.style.backgroundColor = toggle ? "white" : list.fields.cssrgb;
+            rgbbox.style.boxShadow = toggle ? "none" : "4px 4px white";
+
+        })
         rgb.addEventListener("click", function () {
             detail.classList.toggle("active");
         })
