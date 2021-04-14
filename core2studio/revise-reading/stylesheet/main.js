@@ -72,3 +72,9 @@ function pt3showlight() {
     toggle = !toggle;
     document.getElementById("white").style.opacity = toggle ? "1" : "0";
 }
+function pt4showscroll() {
+    toggle = !toggle;
+    document.getElementById("scroll").style.opacity = toggle ? "0" : "1";
+    document.getElementById("showscroll").style.fontWeight = toggle ? "600" : "800";
+    document.getElementById("showscroll").style.color = toggle ? "#AE4747" : "#8A1900";
+}
