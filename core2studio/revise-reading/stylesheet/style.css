@@ -6,8 +6,7 @@ font-weight: 400;
 font-size: 22px;
 }
 .largebox{
-    width: 100%;
-    display: inline;
+display: inline;
 }
 #headbox{
 margin-top: 215px;
@@ -187,6 +186,7 @@ margin: 0 auto;
 }
 #pt2show:hover{
 font-weight:800;
+cursor: pointer;
 text-decoration: underline dashed;
 }
 #pt2showbox{
@@ -206,7 +206,47 @@ width: 86%;
 margin: 0 auto;
 }
 /* pt3 */
-.pt3{
-    width: 80%;
-    color: #797979;
+#pt3{
+background-color: #cccccc;
+}
+.pt3box{
+width: 80%;
+margin: 0 auto;
+padding-top: 20px;
+color:#393939;
+text-align: center;
+}
+#black{
+margin-right: auto;
+font-weight: 700;
+opacity:0;
+width: 80%;
+}
+#black1{
+margin-right: auto;
+font-weight: 700;
+opacity:0;
+width: 80%;
+}
+#heavy{
+    font-weight: 700;
+    color:black;
+    cursor: pointer;
+}
+#white{
+margin-left: auto;
+font-weight: 500;
+color: white;
+width: 80%;
+opacity:0;
+
+}
+#light{
+    font-weight: 500;
+    color:white;
+    cursor: pointer;
+}
+#pt3next:hover{
+text-decoration: underline;
+    cursor: pointer;
 }

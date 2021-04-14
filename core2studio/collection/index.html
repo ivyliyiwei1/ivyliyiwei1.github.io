@@ -10,57 +10,67 @@
 </head>
 
 <body>
-    <nav class="header">
 
-        <div class="navwrapper">
-            <div class="hue">
-                <span id="red">WARM</span>
-                <span id="blue"> COOL</span>
-            </div>
-            <h1 class="maintitle"><span class="c">C</span><span class="o">o</span><span class="l">l</span><span
-                    class="o1">o</span><span class="r">r</span><span class="e">e</span><span
-                    class="d">d</span><br>Altitude
-            </h1>
-
-        </div>
-    </nav>
     <div class="body-container">
-        <div class="line"></div>
-        <div class="wrapfornumber">
-            <div id="first-5000" class="largenumber">5000M</div>
-            <div id="f4750" class="smallnumber">4750M</div>
-            <div id="f4500" class="smallnumber">4500M</div>
-            <div id="f4250" class="smallnumber">4250M</div>
-            <div id="f4000" class="largenumber">4000M</div>
-            <div id="s3750" class="smallnumber">3750M</div>
-            <div id="s3500" class="smallnumber">3500M</div>
-            <div id="s3250" class="smallnumber">3250M</div>
-            <div id="s3000" class="largenumber">3000M</div>
-            <div id="t2750" class="smallnumber">2750M</div>
-            <div id="t2500" class="smallnumber">2500M</div>
-            <div id="t2250" class="smallnumber">2250M</div>
-            <div id="t2000" class="largenumber">2000M</div>
-            <div id="f1750" class="smallnumber">1750M</div>
-            <div id="f1500" class="smallnumber">1500M</div>
-            <div id="f1250" class="smallnumber">1250M</div>
-            <div id="f1000" class="largenumber">1000M</div>
-            <div id="f750" class="smallnumber">750M</div>
-            <div id="f500" class="smallnumber">500M</div>
-            <div id="f250" class="smallnumber">250M</div>
-            <div id="f000" class="largenumber">000M</div>
-            <div id="s_250" class="smallnumber">-250M</div>
-            <div id="s_500" class="smallnumber">-500M</div>
+        <div id="scroll">
+            <div class="line"></div>
+            <div class="wrapfornumber">
+                <div id="first-5000" class="largenumber">5000M</div>
+                <div id="f4750" class="smallnumber">4750M</div>
+                <div id="f4500" class="smallnumber">4500M</div>
+                <div id="f4250" class="smallnumber">4250M</div>
+                <div id="f4000" class="largenumber">4000M</div>
+                <div id="s3750" class="smallnumber">3750M</div>
+                <div id="s3500" class="smallnumber">3500M</div>
+                <div id="s3250" class="smallnumber">3250M</div>
+                <div id="s3000" class="largenumber">3000M</div>
+                <div id="t2750" class="smallnumber">2750M</div>
+                <div id="t2500" class="smallnumber">2500M</div>
+                <div id="t2250" class="smallnumber">2250M</div>
+                <div id="t2000" class="largenumber">2000M</div>
+                <div id="f1750" class="smallnumber">1750M</div>
+                <div id="f1500" class="smallnumber">1500M</div>
+                <div id="f1250" class="smallnumber">1250M</div>
+                <div id="f1000" class="largenumber">1000M</div>
+                <div id="f750" class="smallnumber">750M</div>
+                <div id="f500" class="smallnumber">500M</div>
+                <div id="f250" class="smallnumber">250M</div>
+                <div id="f000" class="largenumber">000M</div>
+                <div id="s_250" class="smallnumber">-250M</div>
+                <div id="s_500" class="smallnumber">-500M</div>
 
+            </div>
+            <div class="wrapforblock">
+            </div>
         </div>
-        <div class="wrapforblock">
+        <nav class="header">
+
+            <div class="navwrapper">
+                <div class="hue">
+                    <span id="red">HIDE WARM</span>
+                    <span id="blue"> HIDE COOL</span>
+                </div>
+                <h1 class="maintitle"><span class="c">C</span><span class="o">o</span><span class="l">l</span><span
+                        class="o1">o</span><span class="r">r</span><span class="e">e</span><span
+                        class="d">d</span><br>Altitude
+                </h1>
+
+            </div>
+        </nav>
+        <div class="wrapfordetail">
+            <div id="list-detail" class="list-detail hidden">
+                <div id="hide">X</div>
+                <h3 class="altitude"></h3>
+                <h2 class="placename"></h2>
+                <h2 class="rgb"></h2>
+                <section class="figure"><img class="picture" /></section>
+            </div>
         </div>
-        <!-- <article id="list-detail" class="list-detail hidden">
-            <h2 class="title"></h2>
-            <section class="figure"><img class="picture" /></section>
-        </article> -->
     </div>
     <script src="lib/airtable.browser.js"></script>
     <script src="main.js"></script>
 </body>
 
 </html>
+<!-- <article id="list-detail" class="list-detail hidden">
+            <h2 class="title"></h2>

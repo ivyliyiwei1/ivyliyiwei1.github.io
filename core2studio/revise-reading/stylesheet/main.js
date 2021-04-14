@@ -59,6 +59,16 @@ function pt1showlast() {
 }
 function pt2show() {
     toggle = !toggle;
-    document.getElementById("pt2showbox").style.display = toggle ? "block" : "none";
+    document.getElementById("pt2showbox").style.display = toggle ? "none" : "block";
     document.getElementById("pt2show").innerHTML = toggle ? "hide a parasol" : "spread a parasol";
+}
+
+function pt3showheavy() {
+    toggle = !toggle;
+    document.getElementById("black").style.opacity = toggle ? "0" : "1";
+    document.getElementById("black1").style.opacity = toggle ? "0" : "1";
+}
+function pt3showlight() {
+    toggle = !toggle;
+    document.getElementById("white").style.opacity = toggle ? "1" : "0";
 }

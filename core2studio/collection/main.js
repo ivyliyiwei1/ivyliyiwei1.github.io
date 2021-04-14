@@ -30,31 +30,51 @@ function gotAllLists(err) {
         console.error(err);
         return;
     }
-    // call function to show the books
+    // call function to show the lists
     consoleLogLists();
     showLists();
 }
+
+
+
 function consoleLogLists() {
     console.log("consoleLogLists()");
     geography.forEach((list) => {
         console.log("List", list);
     });
 }
+
+var currentbgc = "white";
 function showLists() {
     console.log("showLists()");
+
     geography.forEach((list) => {
         console.log("List", list);
         // // create the div for my rgb boxes
-        var rgbbox = document.createElement("div");
+        const rgbbox = document.createElement("div");
         rgbbox.classList.add("colorblock");
         rgbbox.style.backgroundColor = list.fields.cssrgb;
-        //positioning
-        rgbbox.style.position = "absolute";
-        rgbbox.style.left = list.fields.x;
-        rgbbox.style.top = list.fields.y;
+
+        //media queries and positioning
+        function media(x) {
+            if (x.matches) { // If media query matches
+                rgbbox.style.position = "absolute";
+                rgbbox.style.left = list.fields.x;
+                rgbbox.style.top = list.fields.y;
+            } else {
+                rgbbox.style.position = "absolute";
+                rgbbox.style.left = list.fields.x_desktop;
+                rgbbox.style.top = list.fields.y_desktop;
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 375px)")
+        media(x) // Call listener function at run time
+        x.addListener(media)
+
+
         // put the newly created box
         document.querySelector(".wrapforblock").appendChild(rgbbox);
-
         // color rgb text
         var rgb = document.createElement("p");
         rgb.innerText = list.fields.color;
@@ -62,75 +82,134 @@ function showLists() {
         rgb.classList.add("rgbnumber");
         // put the newly created book spine on the shelf
         rgbbox.appendChild(rgb);
-
+        rgbbox.addEventListener("click", () => {
+            showList(rgbbox, list);
+        });
         //create the div for all details
-        var detail = document.createElement("div");
-        detail.classList.add("detailbox");
-        rgbbox.append(detail);
+        // var detail = document.createElement("div");
+        // detail.classList.add("detailbox");
+        // document.querySelector(".wrapforinfo").append(detail);
 
-        // detail page info
-        //height
-        var title = document.createElement("h3");
-        title.innerText = list.fields.altitude;
-        title.classList.add("altitude");
-        detail.append(title);
-        //image
-        var images = document.createElement("img");
-        images.src = list.fields.images[0].url;
-        images.classList.add("picture");
-        detail.append(images);
-        //title
-        var title = document.createElement("h2");
-        title.innerText = list.fields.name;
-        title.classList.add("placename");
-        detail.append(title);
+        // // detail page info
+        // //height
+        // var altitude = document.createElement("h3");
+        // altitude.innerText = list.fields.altitude;
+        // altitude.classList.add("altitude");
+        // detail.append(altitude);
+        // //image
+        // var images = document.createElement("img");
+        // images.src = list.fields.images[0].url;
+        // images.classList.add("picture");
+        // detail.append(images);
+        // //title
+        // var title = document.createElement("h2");
+        // title.innerText = list.fields.name;
+        // title.classList.add("placename");
+        // detail.append(title);
+
         //hue
         var hue = list.fields.hue;
         hue.forEach(function (hue) {
-            rgbbox.classList.add(hue)
-
+            rgbbox.classList.add(hue);
         });
-        //event listener for filter
-        var filterWarm = document.querySelector('#red');
-        filterWarm.addEventListener("click", function () {
-            if (rgbbox.classList.contains("_warm")) {
-                rgbbox.style.opacity = "0";
-                filterWarm.style.color = "white";
-                filterWarm.style.textDecoration = "line-through";
-            } else {
-                rgbbox.style.opacity = "1";
+        rgb.addEventListener("click", function () {
+            if (currentbgc != list.fields.cssrgb) {
+                document.body.style.backgroundColor = list.fields.cssrgb;
+                // rgbbox.classList.add("active");
+                // console.log("hell0");
+                // rgbbox.style.boxShadow = "4px 4px white";
+                currentbgc = list.fields.cssrgb;
             }
-        });
-        //add event listener
-        var toggle = "true";
-        rgb.addEventListener("click", function () {
-            toggle = !toggle;
-            document.body.style.backgroundColor = toggle ? "white" : list.fields.cssrgb;
-            rgbbox.style.boxShadow = toggle ? "none" : "4px 4px white";
+            else {
+                document.body.style.backgroundColor = "white";
+                currentbgc = "white";
+                // rgbbox.style.boxShadow = "none";
+                rgbbox.getElementsByClassName("rgbnumber")[0].classList.remove("active");
+                rgbbox.classList.remove("active");
+            }
+            if (rgbbox.classList.contains("_warm")) {
+                document.getElementById("list-detail").style.boxShadow = "red 30px 30px";
+            }
+            else {
+                document.getElementById("list-detail").style.boxShadow = "blue 30px 30px";
+            }
 
-        })
-        rgb.addEventListener("click", function () {
-            detail.classList.toggle("active");
-        })
+        });
     });
 }
 
-// function showList(list, rgb) {
-//     console.log("showList()", list);
+//X for hide detail box
+document.getElementById('hide').onclick = function () {
+    document.getElementById('list-detail').classList.add("hidden");
+};
 
-//     const listDetail = document.getElementById("list-detail")
 
-//     // populate
-//     listDetail.getElementsByClassName("title")[0].innerText = list.fields.name;
-//     listDetail.getElementsByClassName("picture")[0].src =
-//         list.fields.images[0].url;
+function showList(rgbbox, list) {
+    console.log("showList()", list);
+    const listDetail = document.getElementById("list-detail");
+    //populate
+    listDetail.getElementsByClassName("placename")[0].innerText = list.fields.name;
+    listDetail.getElementsByClassName("altitude")[0].innerText = list.fields.altitude;
+    listDetail.getElementsByClassName("rgb")[0].innerText = list.fields.color;
+    listDetail.getElementsByClassName("picture")[0].src = list.fields.images[0].url;
 
-//     const block = document.getElementById("block");
-//     const colorBlocks = block.getElementsByClassName("active");
-//     for (const colorBlock of colorBlocks) {
-//         colorBlock.classList.remove("active");
-//     }
-//     rgb.classList.add("active");
-//     listDetail.classList.remove("hidden");
-// }
+    listDetail.getElementsByClassName("placename")[0].style.color = list.fields.cssrgb;
+    listDetail.getElementsByClassName("rgb")[0].style.color = list.fields.cssrgb;
+    listDetail.getElementsByClassName("altitude")[0].style.color = list.fields.cssrgb;
+
+
+    const wrapper = document.getElementsByClassName("wrapforblock");
+    console.log("wrapper", wrapper);
+
+    var boxes = wrapper[0].getElementsByClassName("colorblock active");
+    for (const box of boxes) {
+        box.classList.remove("active");
+    }
+    boxes = wrapper[0].getElementsByClassName("rgbnumber active");
+    for (const box of boxes) {
+        box.classList.remove("active");
+    }
+
+    // ...and set it on the one just clicked
+    rgbbox.getElementsByClassName("rgbnumber")[0].classList.add("active");
+    rgbbox.classList.add("active");
+
+    // reveal the detail element, we only really need this the first time
+    // but its not hurting to do it more than once
+    listDetail.classList.remove("hidden");
+}
+//filter
+var filterWarm = document.querySelector("#red");
+var rgbbox = document.getElementsByClassName("colorblock");
+var showWarm = false;
+filterWarm.addEventListener("click", function () {
+    console.log("warm", rgbbox);
+    for (const box of rgbbox) {
+        if (box.classList.contains("_warm")) {
+            box.style.display = showWarm ? "block" : "none";
+            filterWarm.style.color = showWarm ? "red" : "white";
+            filterWarm.style.textDecoration = showWarm ? "none" : "line-through";
+            filterWarm.innerText = showWarm ? "HIDE WARM" : "SHOW WARM";
+        }
+
+    }
+    showWarm = !showWarm;
+});
+
+var filterCool = document.querySelector("#blue");
+var rgbbox = document.getElementsByClassName("colorblock");
+var showCool = false;
+filterCool.addEventListener("click", function () {
+    console.log("cool", rgbbox);
+    for (const box of rgbbox) {
+        if (box.classList.contains("_cool")) {
+            box.style.display = showCool ? "block" : "none";
+            filterCool.style.color = showCool ? "blue" : "white";
+            filterCool.style.textDecoration = showCool ? "none" : "line-through";
+            filterCool.innerText = showCool ? "HIDE COOL" : "SHOW COOL";
+        }
+
+    }
+    showCool = !showCool;
+});
 

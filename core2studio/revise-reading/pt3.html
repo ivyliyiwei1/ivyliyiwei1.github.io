@@ -6,21 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="stylesheet/main.js"></script>
     <title>pt3</title>
 </head>
 
-<body>
-    <div class="pt3">And so it has come to be that the beauty of a Japanese room depends on a variation of shadows,
-        <span id="heavy">heavy shadows</span> against
-        <span id="light">light shadows</span>-it has nothing else. Westerners are amazed at the simplicity of Japanese
+<body id="pt3">
+    <div class="pt3box" id="pt3first">And so it has come to be that the beauty of a Japanese room depends on a variation
+        of shadows,
+        <br><span id="heavy" onclick="pt3showheavy()">heavy shadows</span> against
+        <span id="light" onclick="pt3showlight()">light shadows</span>
+    </div>
+    <br>
+    <div id="black">-it has nothing else. Westerners are amazed at the simplicity of Japanese
         rooms, perceiving in them
         no more
         than ashen walls bereft of ornament. Their reaction is understandable, but it betrays a failure to comprehend
         the
-        mystery of shadows.
-    </div>
+        mystery of shadows.</div>
     <br>
-    <div class="pt3" id="white">Out beyond the sitting room, which the rays of the sun can at best but barely reach,
+    <div id="white">Out beyond the sitting room, which the rays of the sun can at best but barely reach,
         we extend
         the eaves or build on a
         veranda, putting the sunlight at still greater a remove. The light from the garden steals in but dimly through
@@ -32,7 +36,8 @@
         fine
         sand. A luster here would destroy the soft fragile beauty of the feeble light.</div>
     <br>
-    <div class="pt3" id="black">We delight in the mere sight of the delicate glow of fading rays clinging to the
+    <div id="black1">We delight in the mere sight of the delicate glow of fading rays clinging to
+        the
         surface of a
         dusky wall, there to live
         out what little life remains to them. We never tire of the sight, for to us this pale glow and these dim shadows
@@ -43,9 +48,8 @@
         much a
         difference in color as in shade, a difference that will seem to exist only in the mood of the viewer. And from
         these
-        delicate differences in the hue of the walls, the shadows in each room take on a tinge peculiarly their own.
-    </div>
-    <script src="stylesheet/main.js"></script>
+        delicate differences in the hue of the walls, the shadows in each room take on a tinge <span
+            id="pt3next">peculiarly their own.</span></div>
 </body>
 
 </html>
