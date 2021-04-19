@@ -224,7 +224,7 @@ font-weight: bold;
 }
 .wrapfordetail{
     position: fixed;
-       margin-top:120%;
+       bottom: 150px;
        margin-left: 3%;
 }
 .list-detail{
