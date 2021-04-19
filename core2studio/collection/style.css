@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'bruno_aceregular';
-    src: url('bruno_ace_regular-webfont.woff2') format('woff2'),
-         url('bruno_ace_regular-webfont.woff') format('woff');
+    src: url('fonts/bruno_ace_regular-webfont.woff2') format('woff2'),
+         url('fonts/bruno_ace_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -46,7 +46,7 @@ position: relative;
    box-shadow:4px 4px #ffffff;
 }
 .rgbnumber{
-font-family: bruno ace;
+font-family:bruno_aceregular;
 font-size: 13.5px;
 padding-left: 1.5pt;
 padding-top: 1.85pt;
@@ -179,7 +179,7 @@ color: #000;
 margin-top: -30px;
 }
 .altitude{
-font-family: bruno ace;
+font-family: bruno_aceregular;
 font-size: 8pt;
 color: gray;
 text-decoration: underline;
@@ -198,7 +198,7 @@ justify-content: flex-end;
 float: left;
 }
 .largenumber{
-font-family: bruno ace;
+font-family: bruno_aceregular;
 font-size: 12px;
 padding-top: 260px;
 padding-left: 2px;
@@ -206,7 +206,7 @@ color: #000;
 height: 102px;
 }
 .smallnumber{
-font-family: bruno ace;
+font-family: bruno_aceregular;
 font-size: 10px;
 padding-top: 260px;
 padding-left: 2px;
@@ -237,7 +237,7 @@ font-weight: bold;
 }
 
 .rgb{
-    font-family: bruno ace;
+    font-family: bruno_aceregular;
     font-size: 15px;
      margin-left: 4%;
      margin-top: 0;
@@ -251,14 +251,14 @@ font-weight: bold;
     cursor: pointer;
     margin-top: 1%;
         margin-left: 1%;
-    font-family: bruno ace;
+    font-family: bruno_aceregular;
     font-size: 17px;
     color: rgb(204, 204, 204);
 }
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 376px) {
 #f000{
 padding-top: 820px;  
 }
@@ -333,7 +333,7 @@ opacity:100;
     margin-left: 4%;
 }
 .rgb{
-    font-family: bruno ace;
+    font-family: bruno_aceregular;
     font-size: 26px;
      margin-left: 4%;
      margin-top: 0;
