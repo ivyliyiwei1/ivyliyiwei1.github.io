@@ -1,0 +1,51 @@
+body{
+     font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.recipe1{
+    color: yellowgreen;
+    cursor: pointer;
+
+}
+.bold{
+    font-weight: bold;
+}
+.p1{
+        width: 80%;
+        font-size: 20px;
+        display: none;
+}
+#lemon{
+            cursor: pointer;
+}
+.recipe2{
+    color: wheat;
+    cursor: pointer;
+}
+.p2{
+width: 80%;
+font-size: 20px;
+display: none;
+}
+.p1 h3{
+    color: yellowgreen;
+}
+.p2 h3{
+    color: wheat;
+}
+.recipe3{
+    color: orange;
+    cursor: pointer;
+
+}
+.p3{
+width: 80%;
+font-size: 20px;
+display: none;
+}
+.p3 h3{
+    color: coral;
+}
