@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .bloc-logo {
+            position: relative;
+            height: 169px;
+            float: right;
+        }
+
+        .bloc-logo canvas,
+        .bloc-logo .logo-mask {
+            display: block;
+            width: 972px;
+            height: 169px;
+        }
+
+        .bloc-logo .logo-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: 972px;
+            background-image: url("./title.png");
+            text-indent: -9999px;
+        }
+    </style>
+    <!-- Call the script -->
+    <script src="script.js"></script>
+    <script src="granim.js-2.0.0/dist/granim.min.js"></script>
+    <div class="bloc-logo">
+        <canvas id="logo-canvas"></canvas>
+        <a href="index.html" class="logo-mask"></a>
+    </div>
+</body>
+
+</html>

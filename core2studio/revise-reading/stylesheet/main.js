@@ -78,3 +78,18 @@ function pt4showscroll() {
     document.getElementById("showscroll").style.fontWeight = toggle ? "600" : "800";
     document.getElementById("showscroll").style.color = toggle ? "#AE4747" : "#8A1900";
 }
+function pt5showroom() {
+    toggle = !toggle;
+    document.getElementById("showroom").style.color = toggle ? "gray" : "white";
+    document.getElementById("pt5a").style.color = toggle ? "gray" : "white";
+}
+function pt5showorient() {
+    toggle = !toggle;
+    document.getElementById("orient").style.color = toggle ? "gray" : "white";
+    document.getElementById("pt5b").style.color = toggle ? "gray" : "white";
+}
+function pt5showlight() {
+    toggle = !toggle;
+    document.getElementById("cutlight").style.color = toggle ? "gray" : "white";
+    document.getElementById("pt5c").style.color = toggle ? "gray" : "white";
+}

@@ -282,3 +282,33 @@ font-weight: 600;
 text-decoration: underline;
 }
 
+/* /pt5 */
+#pt5{
+    background-color: #989898;
+}
+#pt5first{
+    text-align: left;
+    margin-right: auto;
+}
+.pt5box{
+    position: fixed;
+}
+#pt5smallcontainer{
+    display: block;
+    margin-left: 25%;
+}
+.pt5right{
+    width: 95%;
+    display: block;
+    color: gray;
+}
+.pt5click{
+    font-size: 26px;
+    color: gray;
+    font-weight: 600;
+}
+#pt5next:hover{
+font-weight: 600;
+color: #8A1900;
+text-decoration: underline;
+}

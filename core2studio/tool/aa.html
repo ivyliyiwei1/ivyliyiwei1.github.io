@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="granim-canvas"></canvas>
+
+    <!-- Call the script -->
+    <script src="granim.js-2.0.0/dist/granim.min.js"></script>
+
+    <!-- Create a Granim instance -->
+    <script>
+        var granimInstance = new Granim({
+            element: '#granim-canvas',
+            name: 'granim',
+            opacity: [1, 1],
+            states: {
+                "default-state": {
+                    gradients: [
+                        ['#834D9B', '#D04ED6'],
+                        ['#1CD8D2', '#93EDC7']
+                    ]
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
