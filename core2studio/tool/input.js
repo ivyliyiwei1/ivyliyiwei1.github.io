@@ -5,7 +5,7 @@ let result = document.querySelector("#result");
 let resultText = document.querySelector("#resulttext");
 let imgbox = document.querySelector("#imgbox");
 const testJson = {
-    'apple': ['./title.png', '$2'],
+    'apple': ['icon/apple.png', '$2'],
     'egg': ['icon/egg.png', '$2'],
     'hamburger': ['icon/han.png', '$6'],
     'pizza': ['icon/pizza.png', '$10'],
@@ -28,36 +28,39 @@ const testJson = {
     'fish': ['icon/fish.png', '$5'],
     'chocolate': ['icon/chocolate.png', '$3'],
     'roast chicken': ['icon/wholechicken.png', '$15'],
-    'biscuits': ['icon/wholechicken.png', '$15'],
-    'bagel': ['icon/wholechicken.png', '$15'],
-    'burrito': ['icon/wholechicken.png', '$15'],
-    'french toast': ['icon/wholechicken.png', '$15'],
-    'bacon': ['icon/wholechicken.png', '$15'],
-    'smoothie': ['icon/wholechicken.png', '$15'],
-    'crepes': ['icon/wholechicken.png', '$15'],
-    'parfait': ['icon/wholechicken.png', '$15'],
-    'sandwich': ['icon/wholechicken.png', '$15'],
-    'sausage': ['icon/wholechicken.png', '$15'],
-    'omelet': ['icon/wholechicken.png', '$15'],
-    'croissants': ['icon/wholechicken.png', '$15'],
-    'pasta': ['icon/wholechicken.png', '$15'],
-    'beans': ['icon/wholechicken.png', '$15'],
-    'nuts': ['icon/wholechicken.png', '$15'],
-    'milk': ['icon/wholechicken.png', '$15'],
-    'yogurt': ['icon/wholechicken.png', '$15'],
-    'carrot': ['icon/wholechicken.png', '$15'],
-    'kiwi': ['icon/wholechicken.png', '$15'],
-    'potato': ['icon/wholechicken.png', '$15'],
-    'rice': ['icon/wholechicken.png', '$15'],
-    'avocado': ['icon/wholechicken.png', '$15'],
-    'banana': ['icon/wholechicken.png', '$15'],
-    'blueberry': ['icon/wholechicken.png', '$15'],
-    'popcorn': ['icon/wholechicken.png', '$15'],
-    'marshmallow': ['icon/wholechicken.png', '$15'],
-    'coconut': ['icon/wholechicken.png', '$15'],
-    'dumplings': ['icon/wholechicken.png', '$15'],
-    'cola': ['icon/wholechicken.png', '$15'],
-    'waffles': ['icon/wholechicken.png', '$15'],
+    'biscuits': ['icon/biscuits.png', '$15'],
+    'bagel': ['icon/bagel.png', '$15'],
+    'burrito': ['icon/burrito.png', '$15'],
+    'french toast': ['icon/frenchtoast.png', '$15'],
+    'bacon': ['icon/bacon.png', '$4'],
+    'smoothie': ['icon/smoothie.png', '$15'],
+    'crepes': ['icon/crepes.png', '$15'],
+    'parfait': ['icon/parfait.png', '$15'],
+    'sandwich': ['icon/sandwich.png', '$15'],
+    'sausage': ['icon/sausage.png', '$15'],
+    'omelet': ['icon/omelet.png', '$15'],
+    'croissants': ['icon/croissants.png', '$15'],
+    'pasta': ['icon/pasta.png', '$15'],
+    'beans': ['icon/beans.png', '$15'],
+    'nuts': ['icon/nuts.png', '$15'],
+    'milk': ['icon/milk.png', '$15'],
+    'yogurt': ['icon/yogurt.svg', '$15'],
+    'carrot': ['icon/carrot.png', '$15'],
+    'kiwi': ['icon/kiwi.jpg', '$4'],
+    'potato': ['icon/potato.png', '$15'],
+    'rice': ['icon/rice.svg', '$1'],
+    'avocado': ['icon/avocado.png', '$15'],
+    'banana': ['icon/banana.png', '$15'],
+    'blueberry': ['icon/blueberry.png', '$15'],
+    'popcorn': ['icon/popcorn.png', '$15'],
+    'marshmallow': ['icon/marshmallow.png', '$15'],
+    'coconut': ['icon/coconut.png', '$15'],
+    'dumplings': ['icon/dumplings.png', '$3'],
+    'cola': ['icon/cola.png', '$15'],
+    'water': ['icon/water.png', '$2'],
+    'cereal': ['icon/cereal.png', '$3'],
+    'waffles': ['icon/waffles.png', '$3'],
+    'muffin': ['icon/muffin.png', '$3'],
 
 
 }
@@ -72,14 +75,16 @@ var existText = "";
 inputElement.addEventListener("keydown", function (event) {
     var ul = document.getElementById("myUL");
     var li = ul.getElementsByTagName("li");
+    var enter = document.getElementById("enter");
     //Check if enter key is pressed
     if (event.key == "Enter") {
         existText = existText + inputElement.value;
         // Let's show the text on the page!
-
         if (testJson[inputElement.value]) {
-            resulttext.innerText = ("☟Your feeds:");
-            result.style.marginRight = ("0px");
+
+            resulttext.innerText = ("☟Your feeds today:");
+            resultText.style.right = ("19px");
+            resultText.style.marginTop = ("-116px");
             var eachbox = document.createElement("div");
             var img = document.createElement("img");
             var newtext = document.createElement("div");
@@ -100,13 +105,13 @@ inputElement.addEventListener("keydown", function (event) {
         }
         // Reset the value inside the text box
         inputElement.value = "";
+        enter.style.display = "none";
         console.log("li.length", li.length);
         for (i = 0; i < li.length; i++) {
             li[i].style.display = "none";
         }
     }
 });
-
 
 function myFunction() {
     var input, filter, ul, li, div, i, txtValue;
