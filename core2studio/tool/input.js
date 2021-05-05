@@ -57,6 +57,7 @@ const testJson = {
     'coconut': ['icon/wholechicken.png', '$15'],
     'dumplings': ['icon/wholechicken.png', '$15'],
     'cola': ['icon/wholechicken.png', '$15'],
+    'waffles': ['icon/wholechicken.png', '$15'],
 
 
 }
