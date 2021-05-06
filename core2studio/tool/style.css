@@ -38,16 +38,16 @@ text-indent: -9999px;
 } */
 #input {
   border: none;
-  width: 350px;
+  width: 470px;
   border-bottom: 2px solid rgb(180, 180, 180);
 font-family: ff-providence-sans-web-pro,sans-serif;
 font-weight: 700;
 font-style: normal;
-  font-size: 25px;
-  padding: 4px 5px;
-  margin-top: 12.7%;
+  font-size: 37px;
+  padding: 4px 7px;
+  margin-top: 9.5%;
   transition: width 0.4s ease-in-out;
-  color: rgb(94, 71, 71);
+  color: rgb(97, 100, 131);
 }
 ::placeholder { 
   color:  rgb(180, 180, 180);;
@@ -89,7 +89,7 @@ li{
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 21px;
   color: rgb(155, 129, 129);
   display: block;
   cursor: pointer;
@@ -102,7 +102,7 @@ li{
 font-family: ff-providence-sans-web-pro,sans-serif;
 font-weight: 400;
 font-style: italic;
-font-size: 20px;
+font-size: 24px;
 color: rgb(180, 180, 180);
 display: block;
 }
@@ -114,7 +114,7 @@ float: right;
 font-family: blambot-pro,sans-serif;
 font-weight: 400;
 font-style: normal;
-font-size: 63.5px;
+font-size: 49.5px;
 color: rgb(180, 180, 180);
 margin-top: 128px;
 /* display: flex; */
@@ -129,8 +129,8 @@ margin-top: 128px;
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   position: fixed;
-  margin-top: -105px;
-  right: 29px;
+  margin-top: -99px;
+  right: 26px;
 }
 /* img */
 .eachbox{
@@ -143,4 +143,69 @@ font-size: 52.5px;
 }
 #leftbox{
   position: fixed;
+}
+@media screen and (max-width: 375px) {
+#myUL {
+  font-size: 15px;
+}
+#myUL li div {
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+#input {
+  border: none;
+  width: 341px;
+  border-bottom: 2px solid rgb(180, 180, 180);
+font-family: ff-providence-sans-web-pro,sans-serif;
+font-weight: 700;
+font-style: normal;
+  font-size: 27px;
+  padding: 4px 7px;
+  margin-top: 36.5%;
+  transition: width 0.4s ease-in-out;
+  color: rgb(97, 100, 131);
+}
+
+#input:focus {
+width:341px;
+}
+
+#result{
+font-size: 36.5px;
+margin-top: 123px;
+} 
+#resulttext{
+  color: #fafaff;
+  opacity: 95%;
+  text-shadow: 5px 5px 6px  rgb(91 111 117);
+  width: auto;
+  margin: 0;
+  /* background: -webkit-linear-gradient(#f17777, #7ea0c4); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  position: fixed;
+  margin-top: -111px;
+  right: none;
+  left: 17px;
+}
+ #boxforbar{
+   right: 0px;
+ }
+
+ .eachbox{
+padding-top: 8.1px;
+}
+.price{
+padding-top:42px;
+font-size: 26.5px;
+}
+.icon {
+width: 95px;
+height: 95px;
+margin-right: 5px;
+}
+#imgbox{
+padding-top: 62px;
+}
 }

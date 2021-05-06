@@ -5,62 +5,62 @@ let result = document.querySelector("#result");
 let resultText = document.querySelector("#resulttext");
 let imgbox = document.querySelector("#imgbox");
 const testJson = {
-    'apple': ['icon/apple.png', '$2'],
+    'apple': ['icon/apple.png', '$2.5'],
     'egg': ['icon/egg.png', '$2'],
-    'hamburger': ['icon/han.png', '$6'],
-    'pizza': ['icon/pizza.png', '$10'],
-    'beer': ['icon/beer.png', '$3'],
-    'icecream': ['icon/icecream.png', '$2'],
-    'grape': ['icon/grape.png', '$5'],
-    'fried chicken': ['icon/chicken.png', '$8'],
-    'cheese': ['icon/cheese.png', '$6'],
-    'bread': ['icon/bread.png', '$7'],
-    'doughnut': ['icon/doughnut.png', '$4'],
-    'strawberry': ['icon/strawberry.png', '$11'],
-    'cherry': ['icon/cherry.png', '$12'],
-    'watermelon': ['icon/watermelon.png', '$7'],
-    'wine': ['icon/wine.png', '$15'],
-    'cupcake': ['icon/cupcake.png', '$5'],
-    'noodles': ['icon/noodles.png', '$20'],
-    'taco': ['icon/taco.png', '$18'],
-    'pancake': ['icon/flour.png', '$5'],
-    'starbucks': ['icon/starbucks.png', '$7'],
-    'fish': ['icon/fish.png', '$5'],
+    'hamburger': ['icon/han.png', '$4'],
+    'pizza': ['icon/pizza.png', '$6'],
+    'beer': ['icon/beer.png', '$1.6'],
+    'icecream': ['icon/icecream.png', '$3'],
+    'grape': ['icon/grape.png', '$2'],
+    'fried chicken': ['icon/chicken.png', '$4.5'],
+    'cheese': ['icon/cheese.png', '$15'],
+    'bread': ['icon/bread.png', '$2'],
+    'doughnut': ['icon/doughnut.png', '$1'],
+    'strawberry': ['icon/strawberry.png', '$4'],
+    'cherry': ['icon/cherry.png', '$9'],
+    'watermelon': ['icon/watermelon.png', '$14'],
+    'wine': ['icon/wine.png', '$32'],
+    'cupcake': ['icon/cupcake.png', '$12'],
+    'noodles': ['icon/noodles.png', '$15'],
+    'taco': ['icon/taco.png', '$4'],
+    'pancake': ['icon/flour.png', '$6'],
+    'starbucks': ['icon/starbucks.png', '$4'],
+    'fish': ['icon/fish.png', '$10'],
     'chocolate': ['icon/chocolate.png', '$3'],
-    'roast chicken': ['icon/wholechicken.png', '$15'],
-    'biscuits': ['icon/biscuits.png', '$15'],
-    'bagel': ['icon/bagel.png', '$15'],
-    'burrito': ['icon/burrito.png', '$15'],
-    'french toast': ['icon/frenchtoast.png', '$15'],
-    'bacon': ['icon/bacon.png', '$4'],
-    'smoothie': ['icon/smoothie.png', '$15'],
-    'crepes': ['icon/crepes.png', '$15'],
-    'parfait': ['icon/parfait.png', '$15'],
-    'sandwich': ['icon/sandwich.png', '$15'],
-    'sausage': ['icon/sausage.png', '$15'],
-    'omelet': ['icon/omelet.png', '$15'],
-    'croissants': ['icon/croissants.png', '$15'],
+    'roast chicken': ['icon/wholechicken.png', '$8'],
+    'biscuits': ['icon/biscuits.png', '$6'],
+    'bagel': ['icon/bagel.png', '$5.5'],
+    'burrito': ['icon/burrito.png', '$7'],
+    'french toast': ['icon/frenchtoast.png', '$12'],
+    'bacon': ['icon/bacon.png', '$6'],
+    'smoothie': ['icon/smoothie.png', '$5'],
+    'crepes': ['icon/crepes.png', '$9'],
+    'parfait': ['icon/parfait.png', '$1.5'],
+    'sandwich': ['icon/sandwich.png', '$5'],
+    'sausage': ['icon/sausage.png', '$6'],
+    'omelet': ['icon/omelet.png', '$8'],
+    'croissants': ['icon/croissants.png', '$5'],
     'pasta': ['icon/pasta.png', '$15'],
-    'beans': ['icon/beans.png', '$15'],
-    'nuts': ['icon/nuts.png', '$15'],
-    'milk': ['icon/milk.png', '$15'],
-    'yogurt': ['icon/yogurt.svg', '$15'],
-    'carrot': ['icon/carrot.png', '$15'],
-    'kiwi': ['icon/kiwi.jpg', '$4'],
-    'potato': ['icon/potato.png', '$15'],
+    'beans': ['icon/beans.png', '$2'],
+    'nuts': ['icon/nuts.png', '$6'],
+    'milk': ['icon/milk.png', '$4'],
+    'yogurt': ['icon/yogurt.svg', '$2.5'],
+    'carrot': ['icon/carrot.png', '$1.8'],
+    'kiwi': ['icon/kiwi.jpg', '$4.7'],
+    'potato': ['icon/potato.png', '$1'],
     'rice': ['icon/rice.svg', '$1'],
-    'avocado': ['icon/avocado.png', '$15'],
-    'banana': ['icon/banana.png', '$15'],
-    'blueberry': ['icon/blueberry.png', '$15'],
-    'popcorn': ['icon/popcorn.png', '$15'],
-    'marshmallow': ['icon/marshmallow.png', '$15'],
-    'coconut': ['icon/coconut.png', '$15'],
-    'dumplings': ['icon/dumplings.png', '$3'],
-    'cola': ['icon/cola.png', '$15'],
+    'avocado': ['icon/avocado.png', '$2'],
+    'banana': ['icon/banana.png', '$1.5'],
+    'blueberry': ['icon/blueberry.png', '$10'],
+    'popcorn': ['icon/popcorn.png', '$1'],
+    'marshmallow': ['icon/marshmallow.png', '$5'],
+    'coconut': ['icon/coconut.png', '$2'],
+    'dumplings': ['icon/dumplings.png', '$6'],
+    'cola': ['icon/cola.png', '$2'],
     'water': ['icon/water.png', '$2'],
-    'cereal': ['icon/cereal.png', '$3'],
-    'waffles': ['icon/waffles.png', '$3'],
-    'muffin': ['icon/muffin.png', '$3'],
+    'cereal': ['icon/cereal.png', '$4'],
+    'waffles': ['icon/waffles.png', '$4'],
+    'muffin': ['icon/muffin.png', '$7'],
 
 
 }
@@ -69,6 +69,16 @@ console.log(testJson['apple'])
 
 // Detect when key is pressed in the text box
 var existText = "";
+function media(x) {
+    var enter = document.getElementById("enter");
+    if (x.matches) { // If media query matches
+        resultText.innerText = ("☟ Wondered your feeds ?");
+        enter.innerText = ("*type in a letter to see what's avliable and select what you eat!");
+    }
+}
+var x = window.matchMedia("(max-width: 375px)")
+media(x) // Call listener function at run time
+x.addListener(media)
 
 // var img = result.createElement("img");
 // img.src = "";
@@ -83,8 +93,21 @@ inputElement.addEventListener("keydown", function (event) {
         if (testJson[inputElement.value]) {
 
             resulttext.innerText = ("☟Your feeds today:");
-            resultText.style.right = ("19px");
+            resultText.style.right = ("41px");
             resultText.style.marginTop = ("-116px");
+            resultText.style.fontSize = ("60px");
+            function media(x) {
+                if (x.matches) { // If media query matches
+                    resultText.style.right = ("37px");
+                    resultText.style.fontSize = ("35px");
+                    resultText.style.marginTop = ("-108px");
+                }
+            }
+
+            var x = window.matchMedia("(max-width: 375px)")
+            media(x) // Call listener function at run time
+            x.addListener(media)
+
             var eachbox = document.createElement("div");
             var img = document.createElement("img");
             var newtext = document.createElement("div");
@@ -101,7 +124,10 @@ inputElement.addEventListener("keydown", function (event) {
             // price.classList.add("price");
             // console.log(testJson[inputElement.value][1]);
             // eachbox.appendChild(price);
-            imgbox.appendChild(eachbox);
+            imgbox.insertBefore(eachbox, imgbox.childNodes[0]);
+        }
+        else {
+            alert("SORRY>0< the meal you typed in is not include in  this website! Please try another one!! You may type in the one letter first to see what is avliable!");
         }
         // Reset the value inside the text box
         inputElement.value = "";
@@ -150,4 +176,3 @@ function addTextTag(text) {
     input.focus();
     input.dispatchEvent(autoEnter);
 }
-
