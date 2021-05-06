@@ -72,7 +72,7 @@ var existText = "";
 function media(x) {
     var enter = document.getElementById("enter");
     if (x.matches) { // If media query matches
-        resultText.innerText = ("☟ Wondered your feeds ?");
+        resultText.innerText = ("☟ Wondered your feed ?");
         enter.innerText = ("*type in a letter to see what's avliable and select what you eat!");
     }
 }
@@ -92,9 +92,9 @@ inputElement.addEventListener("keydown", function (event) {
         // Let's show the text on the page!
         if (testJson[inputElement.value]) {
 
-            resulttext.innerText = ("☟Your feeds today:");
+            resulttext.innerText = ("☟Your feed today:");
             resultText.style.right = ("41px");
-            resultText.style.marginTop = ("-116px");
+            resultText.style.marginTop = ("-107px");
             resultText.style.fontSize = ("60px");
             function media(x) {
                 if (x.matches) { // If media query matches

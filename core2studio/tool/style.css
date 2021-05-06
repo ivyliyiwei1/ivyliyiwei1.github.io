@@ -1,4 +1,14 @@
     @import url("https://use.typekit.net/tau3toe.css");
+@font-face {
+    font-family: 'Bagnard';
+    src: url('font/Bagnard.woff2') format('woff2'),
+        url('font/Bagnard.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
  /* title */
  body{
    padding-top: 0;
@@ -14,23 +24,27 @@
 height: 114px;
 float: right;
   position: relative;
+    box-shadow: 5px 5px 5px rgb(180, 180, 180);
 }
 
 .bloc-logo canvas,
 .bloc-logo .logo-mask {
 display: block;
-width: 859px;
+width: 1422px;
 height: 114px;
-  box-shadow: 5px 5px 5px rgb(180, 180, 180);
-}
 
+}
+.logo-mask{
+  box-shadow: none;
+}
 .bloc-logo .logo-mask {
 position: absolute;
 top: 0;
 left: 0;
 background-size: 830px;
-/* background-image: url("./title.png"); */
+background-image: url("./title.png");
 text-indent: -9999px;
+  width: 616px;
 }
 /* input format  */
 /* .inputbox{
@@ -43,9 +57,9 @@ text-indent: -9999px;
 font-family: ff-providence-sans-web-pro,sans-serif;
 font-weight: 700;
 font-style: normal;
-  font-size: 37px;
+  font-size: 35px;
   padding: 4px 7px;
-  margin-top: 9.5%;
+  margin-top: 26.5%;
   transition: width 0.4s ease-in-out;
   color: rgb(97, 100, 131);
 }
@@ -111,12 +125,13 @@ display: block;
 overflow: scroll;
 margin-right:9px;
 float: right;
-font-family: blambot-pro,sans-serif;
+ font-family: 'Bagnard';
+  text-transform: uppercase;
 font-weight: 400;
 font-style: normal;
-font-size: 49.5px;
+font-size: 53.5px;
 color: rgb(180, 180, 180);
-margin-top: 128px;
+margin-top: 116px;
 /* display: flex; */
 } 
 #resulttext{
@@ -129,8 +144,8 @@ margin-top: 128px;
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   position: fixed;
-  margin-top: -99px;
-  right: 26px;
+  margin-top: -92px;
+  right: 34px;
 }
 /* img */
 .eachbox{
@@ -138,8 +153,8 @@ display: flex;
 padding-top: 8.1px;
 }
 .price{
-padding-top:35px;
-font-size: 52.5px;
+padding-top:37px;
+font-size: 54.5px;
 }
 #leftbox{
   position: fixed;
@@ -172,8 +187,8 @@ width:341px;
 }
 
 #result{
-font-size: 36.5px;
-margin-top: 123px;
+font-size: 37.5px;
+margin-top: 114px;
 } 
 #resulttext{
   color: #fafaff;
@@ -187,7 +202,7 @@ margin-top: 123px;
   position: fixed;
   margin-top: -111px;
   right: none;
-  left: 17px;
+  left: 38px;
 }
  #boxforbar{
    right: 0px;
@@ -207,5 +222,10 @@ margin-right: 5px;
 }
 #imgbox{
 padding-top: 62px;
+}
+#enter{
+font-size: 20px;
+color: rgb(180, 180, 180);
+display: block;
 }
 }
