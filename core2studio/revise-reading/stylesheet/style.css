@@ -1,5 +1,18 @@
 @import url("https://use.typekit.net/aab0yxu.css");
 /* home */
+#home{
+    background-color: white;
+    width: 50px;
+    height: 40px;
+    top:754px ;
+    position: absolute;
+    line-height: 40px;
+    font-size: 15px;
+    color: #788263;
+    font-weight: 600;
+    border: 3px solid #788263 ;
+    cursor: pointer;
+}
 body{
 font-family: semplicitapro, sans-serif;
 font-weight: 400;
@@ -34,7 +47,7 @@ width: 47%;
 }
 #contentbox{
 
-margin-top: 35px;
+margin-top: 65px;
 }
 .content{
 list-style: none;
@@ -205,6 +218,14 @@ margin: 0 auto;
 width: 86%;
 margin: 0 auto;
 }
+#next2{
+color: #797979;
+font-weight: bold;
+}
+#next2:hover{
+text-decoration: underline;
+font-style: italic;
+}
 /* pt3 */
 #pt3{
 background-color: #cccccc;
@@ -292,6 +313,7 @@ text-decoration: underline;
 }
 .pt5box{
     position: fixed;
+    cursor: pointer;
 }
 #pt5smallcontainer{
     display: block;
@@ -307,8 +329,36 @@ text-decoration: underline;
     color: gray;
     font-weight: 600;
 }
+#pt5next{
+    color: gray;
+     font-weight: 700;
+
+}
 #pt5next:hover{
 font-weight: 600;
 color: #8A1900;
 text-decoration: underline;
+}
+/* pt6 */
+#pt6{
+    background-color: white;
+}
+#pt6first{
+    color:#FFE921;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#pt6first:hover{
+text-decoration: underline dashed;
+}
+#pt6container{
+    color: white;
+    width: 60%;
+line-height:33px ;
+    text-align: justify;
+      margin: 0 auto;
 }

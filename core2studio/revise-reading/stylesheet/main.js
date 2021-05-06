@@ -93,3 +93,12 @@ function pt5showlight() {
     document.getElementById("cutlight").style.color = toggle ? "gray" : "white";
     document.getElementById("pt5c").style.color = toggle ? "gray" : "white";
 }
+function pt5showlight() {
+    toggle = !toggle;
+    document.getElementById("cutlight").style.color = toggle ? "gray" : "white";
+    document.getElementById("pt5c").style.color = toggle ? "gray" : "white";
+}
+function pt6show() {
+    toggle = !toggle;
+    document.getElementById("pt6").style.backgroundColor = toggle ? "white" : "#1B1B1B";
+}
