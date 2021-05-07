@@ -4,6 +4,7 @@ let inputElement = document.querySelector("#input");
 let result = document.querySelector("#result");
 let resultText = document.querySelector("#resulttext");
 let imgbox = document.querySelector("#imgbox");
+
 const testJson = {
     'apple': ['icon/apple.png', '$2.5'],
     'egg': ['icon/egg.png', '$2'],
@@ -72,7 +73,7 @@ var existText = "";
 function media(x) {
     var enter = document.getElementById("enter");
     if (x.matches) { // If media query matches
-        resultText.innerText = ("☟ Wondered your feed ?");
+        resultText.innerText = ("☟ What do you eat today?");
         enter.innerText = ("*type in a letter to see what's avliable and select what you eat!");
     }
 }
@@ -86,16 +87,19 @@ inputElement.addEventListener("keydown", function (event) {
     var ul = document.getElementById("myUL");
     var li = ul.getElementsByTagName("li");
     var enter = document.getElementById("enter");
+    var mask = document.getElementById("logo-mask");
     //Check if enter key is pressed
     if (event.key == "Enter") {
         existText = existText + inputElement.value;
         // Let's show the text on the page!
         if (testJson[inputElement.value]) {
 
-            resulttext.innerText = ("☟Your feed today:");
+            resulttext.innerText = ("Your feed today☟:");
             resultText.style.right = ("41px");
             resultText.style.marginTop = ("-107px");
             resultText.style.fontSize = ("60px");
+            mask.style.right = ("758px");
+            mask.style.width = ("671px");
             function media(x) {
                 if (x.matches) { // If media query matches
                     resultText.style.right = ("37px");

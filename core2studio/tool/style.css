@@ -28,19 +28,20 @@ float: right;
 }
 
 .bloc-logo canvas,
-.bloc-logo .logo-mask {
+.bloc-logo #logo-mask {
 display: block;
 width: 1422px;
 height: 114px;
 
 }
-.logo-mask{
+#logo-mask{
   box-shadow: none;
+  right: -1px;
 }
-.bloc-logo .logo-mask {
+.bloc-logo #logo-mask {
 position: absolute;
 top: 0;
-left: 0;
+/* left: 0; */
 background-size: 830px;
 background-image: url("./title.png");
 text-indent: -9999px;
@@ -57,9 +58,9 @@ text-indent: -9999px;
 font-family: ff-providence-sans-web-pro,sans-serif;
 font-weight: 700;
 font-style: normal;
-  font-size: 35px;
+  font-size: 40px;
   padding: 4px 7px;
-  margin-top: 26.5%;
+  margin-top: 26%;
   transition: width 0.4s ease-in-out;
   color: rgb(97, 100, 131);
 }
@@ -69,7 +70,7 @@ font-style: normal;
 }
 
 #input:focus {
-width:530px;
+width:600px;
 }
 
 
@@ -129,7 +130,7 @@ float: right;
   text-transform: uppercase;
 font-weight: 400;
 font-style: normal;
-font-size: 53.5px;
+font-size: 49.5px;
 color: rgb(180, 180, 180);
 margin-top: 116px;
 /* display: flex; */
@@ -144,8 +145,8 @@ margin-top: 116px;
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   position: fixed;
-  margin-top: -92px;
-  right: 34px;
+  margin-top: -97px;
+  right: 627px;
 }
 /* img */
 .eachbox{
@@ -175,9 +176,10 @@ font-size: 54.5px;
 font-family: ff-providence-sans-web-pro,sans-serif;
 font-weight: 700;
 font-style: normal;
-  font-size: 27px;
-  padding: 4px 7px;
-  margin-top: 36.5%;
+  font-size: 24px;
+  padding: 1px 7px;
+  margin-top: 35.5%;
+  margin-left: 0.5px;
   transition: width 0.4s ease-in-out;
   color: rgb(97, 100, 131);
 }
@@ -187,8 +189,8 @@ width:341px;
 }
 
 #result{
-font-size: 37.5px;
-margin-top: 114px;
+font-size: 35.5px;
+margin-top: 119px;
 } 
 #resulttext{
   color: #fafaff;
@@ -202,7 +204,8 @@ margin-top: 114px;
   position: fixed;
   margin-top: -111px;
   right: none;
-  left: 38px;
+  left: 21px;
+  right:0px;
 }
  #boxforbar{
    right: 0px;
@@ -221,11 +224,15 @@ height: 95px;
 margin-right: 5px;
 }
 #imgbox{
-padding-top: 62px;
+padding-top: 51.5px;
 }
 #enter{
 font-size: 20px;
 color: rgb(180, 180, 180);
 display: block;
+}
+.bloc-logo #logo-mask {
+background-image:none;
+
 }
 }
